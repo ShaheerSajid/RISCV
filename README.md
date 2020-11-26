@@ -35,10 +35,10 @@ This is a soft implementation of a processor on the opensource RISC-V ISA. The p
 ```
 .
 +-- _images
-+-- _Quartus
++-- _quartus
 |   +-- begin-with-the-crazy-ideas.textile
 |   +-- on-simplicity-in-technology.markdown
-+-- _include
++-- _src
 |   +-- footer.html
 |   +-- header.html
 +-- _layouts
@@ -180,6 +180,6 @@ B --> D{Rhombus}
 C --> D
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1Mjc4ODk4NTksLTE3NTQzNjg1MjksLT
-E0MTg5NDM1MSw0NDMyODM2MDQsNDU1MTU1NTIyXX0=
+eyJoaXN0b3J5IjpbMTU3NzkxOTg5NywtMTc1NDM2ODUyOSwtMT
+QxODk0MzUxLDQ0MzI4MzYwNCw0NTUxNTU1MjJdfQ==
 -->
