@@ -1,0 +1,67 @@
+Design Assistant report for RISCV_CORE
+Sat Nov  7 13:19:26 2020
+Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Design Assistant Summary
+  3. Design Assistant Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2018  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details.
+
+
+
++-----------------------------------------------------------------------+
+; Design Assistant Summary                                              ;
++-----------------------------------+-----------------------------------+
+; Design Assistant Status           ; Failed - Sat Nov  7 13:19:26 2020 ;
+; Revision Name                     ; RISCV_CORE                        ;
+; Top-level Entity Name             ; RISCV_CORE                        ;
+; Family                            ; MAX 10                            ;
+; Total Critical Violations         ; 0                                 ;
+; Total High Violations             ; 0                                 ;
+; Total Medium Violations           ; 0                                 ;
+; Total Information only Violations ; 0                                 ;
++-----------------------------------+-----------------------------------+
+
+
++---------------------------+
+; Design Assistant Messages ;
++---------------------------+
+Info: *******************************************************************
+Info: Running Quartus Prime Design Assistant
+    Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
+    Info: Processing started: Sat Nov  7 13:19:26 2020
+Info: Command: quartus_drc RISCV_CORE -c RISCV_CORE
+Info (119006): Selected device 10M50DAF484C7G for design "RISCV_CORE"
+Info (15535): Implemented PLL "pll_8m:pll_8m_inst|altpll:altpll_component|pll_8m_altpll:auto_generated|pll1" as MAX 10 PLL type File: /home/shaheer/Desktop/Projects/RISC/Demo/DE10/RISCV_CORE/db/pll_8m_altpll.v Line: 43
+    Info (15099): Implementing clock multiplication of 8, clock division of 25, and phase shift of 0 degrees (0 ps) for pll_8m:pll_8m_inst|altpll:altpll_component|pll_8m_altpll:auto_generated|wire_pll1_clk[0] port File: /home/shaheer/Desktop/Projects/RISC/Demo/DE10/RISCV_CORE/db/pll_8m_altpll.v Line: 43
+Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+Error (12595): Design Assistant information: Design Assistant does not support current family.
+Error: Quartus Prime Design Assistant was unsuccessful. 1 error, 1 warning
+    Error: Peak virtual memory: 940 megabytes
+    Error: Processing ended: Sat Nov  7 13:19:26 2020
+    Error: Elapsed time: 00:00:00
+    Error: Total CPU time (on all processors): 00:00:01
+
+
