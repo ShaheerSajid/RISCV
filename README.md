@@ -95,15 +95,18 @@ Steps to compile project:
 
 ## ToDos
 
+ - [ ] ISP
  - [ ] Interrupts
  - [ ] CSR 
  - [ ] Pipelined Div and Rem
  - [ ] Pipelined FPU
  - [ ] Branch Prediction
  - [ ] Improve FMAX
+ - [ ] Support for external flash
+ - [ ] Support for SDRAM
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzgwNjQ0MjAyLDEwMjcyMTI5NzEsLTIwMD
+eyJoaXN0b3J5IjpbNjMwOTY4MjU3LDEwMjcyMTI5NzEsLTIwMD
 Y2MTAwMzIsMzI4NDU4NzUyLC0xNzU0MzY4NTI5LC0xNDE4OTQz
 NTEsNDQzMjgzNjA0LDQ1NTE1NTUyMl19
 -->
