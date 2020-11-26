@@ -59,8 +59,8 @@ Steps to compile project:
 
 ## Programming
 
- 1. Download visual studio code and open the DE10 workspace in Code folder.
- 2. Download and ext 
+ 1. Download riscv32 from the repository and extract in 'opt' folder. The directory should be as follows: opt/riscv32/bin.
+ 2. Download visual studio code and open the DE10 workspace in Code folder.
  3. Open link.riscv.ld and give absolute path of the file link.common.ld in the include section.
  4. Add your code to main.c.
  5. Click terminal/run build task.
@@ -189,7 +189,7 @@ B --> D{Rhombus}
 C --> D
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyMzUxNzA4MzgsLTIwMDY2MTAwMzIsMz
-I4NDU4NzUyLC0xNzU0MzY4NTI5LC0xNDE4OTQzNTEsNDQzMjgz
-NjA0LDQ1NTE1NTUyMl19
+eyJoaXN0b3J5IjpbNDAzNjc1MzcsLTIwMDY2MTAwMzIsMzI4ND
+U4NzUyLC0xNzU0MzY4NTI5LC0xNDE4OTQzNTEsNDQzMjgzNjA0
+LDQ1NTE1NTUyMl19
 -->
