@@ -64,7 +64,7 @@ Steps to compile project:
  4. Add your code to main.c.
  5. Click terminal/run build task.
  6. The file main.hex will be generated inside the flash folder.
- 7. 
+ 7. The folder libs contain libraries of the available peripherals
 
 ## Examples
 
@@ -75,7 +75,7 @@ Steps to compile project:
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzNzUzMjM3ODksMTAyNzIxMjk3MSwtMj
-AwNjYxMDAzMiwzMjg0NTg3NTIsLTE3NTQzNjg1MjksLTE0MTg5
-NDM1MSw0NDMyODM2MDQsNDU1MTU1NTIyXX0=
+eyJoaXN0b3J5IjpbMTY5NzY5NjI5LDEwMjcyMTI5NzEsLTIwMD
+Y2MTAwMzIsMzI4NDU4NzUyLC0xNzU0MzY4NTI5LC0xNDE4OTQz
+NTEsNDQzMjgzNjA0LDQ1NTE1NTUyMl19
 -->
