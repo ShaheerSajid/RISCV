@@ -32,30 +32,23 @@ This is a soft implementation of a processor on the opensource RISC-V ISA. The p
 
 ## Project
 
+Steps to compile project:
+
+ 1. Download 
+
 ```
 .
 +-- _images
 +-- _DE10 Lite
 |	+--RISCV_CORE (Quartus Prime lite 18.1 project)
 +-- _Code (vscode workspace)
-+-- _tests
-|	+--Dhrystone
-+-- _IPs
++-- _tests 
+|	+--Dhrystone (vscode workspace)
++-- _IPs (Platform Designer)
 |	+--Core
 |	+--gpio
 |	+--timer
 |	+--serial
-
-+-- _layouts
-|   +-- default.html
-|   +-- post.html
-+-- _posts
-|   +-- 2007-10-29-why-every-programmer-should-play-nethack.textile
-|   +-- 2009-04-26-barcamp-boston-4-roundup.textile
-+-- _data
-|   +-- members.yml
-+-- _site
-+-- index.html
 ```
 
 ## Programming
@@ -185,7 +178,7 @@ B --> D{Rhombus}
 C --> D
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTEwMTY0NzgzLC0yMDA2NjEwMDMyLDMyOD
-Q1ODc1MiwtMTc1NDM2ODUyOSwtMTQxODk0MzUxLDQ0MzI4MzYw
-NCw0NTUxNTU1MjJdfQ==
+eyJoaXN0b3J5IjpbLTI0NTg4MTY3MywtMjAwNjYxMDAzMiwzMj
+g0NTg3NTIsLTE3NTQzNjg1MjksLTE0MTg5NDM1MSw0NDMyODM2
+MDQsNDU1MTU1NTIyXX0=
 -->
