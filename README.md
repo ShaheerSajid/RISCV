@@ -70,8 +70,16 @@ Steps to compile project:
 	void  gpio_mode(int, int); //pin(0-31), mode(input,output)
 	void  gpio_write(int, int);//pin(0-31),HIGH,LOW
 	int  gpio_read(int);//pin(0-31)
-	
 	SERIAL:
+	int  serial_putc(int);//print char
+	void  serial_puts(char*);//print string
+	char  serial_getc();//get char
+	int  serial_available();//if recv
+	TIMER:
+	void  timer_set_prescaler(int);//configure timer clock
+	void  timer_set_compare(int);
+	int  timer_read_conf();
+	int  timer_read_cnt();
 	
 ## Examples
 
@@ -82,7 +90,7 @@ Steps to compile project:
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5Mzg0NjY2NjQsMTAyNzIxMjk3MSwtMj
+eyJoaXN0b3J5IjpbLTE5MDg3OTk2NzgsMTAyNzIxMjk3MSwtMj
 AwNjYxMDAzMiwzMjg0NTg3NTIsLTE3NTQzNjg1MjksLTE0MTg5
 NDM1MSw0NDMyODM2MDQsNDU1MTU1NTIyXX0=
 -->
