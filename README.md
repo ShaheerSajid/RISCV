@@ -25,6 +25,7 @@ This is a soft implementation of a processor on the opensource RISC-V ISA. The p
 	 - 3141592653589793238462643383279502884197169399375105820974944592307816406286208998628034825342117067
 	 - Cycles: 1728973
  - Dhrystone
+ 
  ![enter image description here](https://raw.githubusercontent.com/ShaheerSajid/RISCV/master/images/dhry.png)
 	 - DMIPS/Mhz : 1.13
 
@@ -161,6 +162,6 @@ B --> D{Rhombus}
 C --> D
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0MTg5NDM1MSw0NDMyODM2MDQsNDU1MT
-U1NTIyXX0=
+eyJoaXN0b3J5IjpbLTE4NDczODg4NjMsLTE0MTg5NDM1MSw0ND
+MyODM2MDQsNDU1MTU1NTIyXX0=
 -->
