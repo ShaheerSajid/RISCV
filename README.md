@@ -13,9 +13,9 @@ This is a soft implementation of a processor on the opensource RISC-V ISA. The p
  - Single cycle multiply and floating hardware
  - 16KB Instruction Memory and 32KB Data Memory. (Configurable)
  - Logic Utilization (Core only):
-		 - Logic Cells: 4366
-		 - Logic Registers: 802
-		 - Memory Bits: 4096
+	- Logic Cells: 4366
+	- Logic Registers: 802
+	 - Memory Bits: 4096
 
 ## Benchmarks and Tests
 
@@ -161,6 +161,6 @@ B --> D{Rhombus}
 C --> D
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQzMjk1NTA2Nyw0NDMyODM2MDQsNDU1MT
-U1NTIyXX0=
+eyJoaXN0b3J5IjpbLTE2MzA2MDAyNDcsNDQzMjgzNjA0LDQ1NT
+E1NTUyMl19
 -->
