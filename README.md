@@ -89,12 +89,18 @@ Steps to compile project:
 ## Examples
 
  - LCD
+ - UART
+ - TIMER
+
 
 ## ToDos
 
+ - [ ] Interrupts
+ - [ ] 
+ - [ ]  
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI2NTg0MjgyOSwxMDI3MjEyOTcxLC0yMD
+eyJoaXN0b3J5IjpbLTU3NjA0NDA1MywxMDI3MjEyOTcxLC0yMD
 A2NjEwMDMyLDMyODQ1ODc1MiwtMTc1NDM2ODUyOSwtMTQxODk0
 MzUxLDQ0MzI4MzYwNCw0NTUxNTU1MjJdfQ==
 -->
