@@ -32,12 +32,8 @@ This is a soft implementation of a processor on the opensource RISC-V ISA. The p
 
 ## Project
 
-Steps to compile project:
 
- 1. Download and install Quartus Prime Lite 18.1
- 2. Open RISCV_CORE.qpf in DE10 Lite/RISCV_CORE
- 3. Change device and pin assignments according to whatever device you are using
- 4. Ope
+
 
 ```
 .
@@ -181,7 +177,7 @@ B --> D{Rhombus}
 C --> D
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExMDI2ODI1MSwtMjAwNjYxMDAzMiwzMj
-g0NTg3NTIsLTE3NTQzNjg1MjksLTE0MTg5NDM1MSw0NDMyODM2
-MDQsNDU1MTU1NTIyXX0=
+eyJoaXN0b3J5IjpbMTc2NDY2ODc2LC0yMDA2NjEwMDMyLDMyOD
+Q1ODc1MiwtMTc1NDM2ODUyOSwtMTQxODk0MzUxLDQ0MzI4MzYw
+NCw0NTUxNTU1MjJdfQ==
 -->
