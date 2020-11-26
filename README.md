@@ -20,10 +20,10 @@ This is a soft implementation of a processor on the opensource RISC-V ISA. The p
 ## Benchmarks and Tests
 
  - Fmax: 20Mhz
-		- Current CPU frequency is 16Mhz
+	- Current CPU frequency is 16Mhz
  - Calculation of 100 PI digits:
-		 - 3141592653589793238462643383279502884197169399375105820974944592307816406286208998628034825342117067
-		 - Cycles: 1728973
+	 - 3141592653589793238462643383279502884197169399375105820974944592307816406286208998628034825342117067
+	 - Cycles: 1728973
  - Dhrystone
  ![enter image description here](https://raw.githubusercontent.com/ShaheerSajid/RISCV/master/images/dhry.png)
  - DMIPS/Mhz : 1.13
@@ -161,6 +161,6 @@ B --> D{Rhombus}
 C --> D
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTMxNTYxNTA3LDQ0MzI4MzYwNCw0NTUxNT
-U1MjJdfQ==
+eyJoaXN0b3J5IjpbMTQzMjk1NTA2Nyw0NDMyODM2MDQsNDU1MT
+U1NTIyXX0=
 -->
