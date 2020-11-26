@@ -77,9 +77,11 @@ Steps to compile project:
 	int  serial_available();//if recv
 	TIMER:
 	void  timer_set_prescaler(int);//configure timer clock
-	void  timer_set_compare(int);
-	int  timer_read_conf();
-	int  timer_read_cnt();
+	void  timer_set_compare(int);//enter compare value
+	int  timer_read_conf();//read configuration register (OVF,CMPF,PRESCALER)
+	int  timer_read_cnt();//read timer counter
+	UTIL:
+	PRINTF,SPRINTF ported to UART (Does not support floating yet)
 	
 ## Examples
 
@@ -90,7 +92,7 @@ Steps to compile project:
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5MDg3OTk2NzgsMTAyNzIxMjk3MSwtMj
-AwNjYxMDAzMiwzMjg0NTg3NTIsLTE3NTQzNjg1MjksLTE0MTg5
-NDM1MSw0NDMyODM2MDQsNDU1MTU1NTIyXX0=
+eyJoaXN0b3J5IjpbLTEzMTkwMDg0MSwxMDI3MjEyOTcxLC0yMD
+A2NjEwMDMyLDMyODQ1ODc1MiwtMTc1NDM2ODUyOSwtMTQxODk0
+MzUxLDQ0MzI4MzYwNCw0NTUxNTU1MjJdfQ==
 -->
