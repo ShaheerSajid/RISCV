@@ -67,6 +67,11 @@ Steps to compile project:
  
  ### System Libraries
 	GPIO:
+	void  gpio_mode(int, int); //pin(0-31), mode(input,output)
+	void  gpio_write(int, int);//pin(0-31),HIGH,LOW
+	int  gpio_read(int);//pin(0-31)
+	
+	SERIAL:
 	
 ## Examples
 
@@ -77,7 +82,7 @@ Steps to compile project:
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTkzOTcyNjk2MCwxMDI3MjEyOTcxLC0yMD
-A2NjEwMDMyLDMyODQ1ODc1MiwtMTc1NDM2ODUyOSwtMTQxODk0
-MzUxLDQ0MzI4MzYwNCw0NTUxNTU1MjJdfQ==
+eyJoaXN0b3J5IjpbLTE5Mzg0NjY2NjQsMTAyNzIxMjk3MSwtMj
+AwNjYxMDAzMiwzMjg0NTg3NTIsLTE3NTQzNjg1MjksLTE0MTg5
+NDM1MSw0NDMyODM2MDQsNDU1MTU1NTIyXX0=
 -->
