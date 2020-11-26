@@ -32,7 +32,26 @@ This is a soft implementation of a processor on the opensource RISC-V ISA. The p
 
 ## Project
 
-
+```
+.
++-- _config.yml
++-- _drafts
+|   +-- begin-with-the-crazy-ideas.textile
+|   +-- on-simplicity-in-technology.markdown
++-- _includes
+|   +-- footer.html
+|   +-- header.html
++-- _layouts
+|   +-- default.html
+|   +-- post.html
++-- _posts
+|   +-- 2007-10-29-why-every-programmer-should-play-nethack.textile
+|   +-- 2009-04-26-barcamp-boston-4-roundup.textile
++-- _data
+|   +-- members.yml
++-- _site
++-- index.html
+```
 
 ## Programming
 
@@ -161,6 +180,6 @@ B --> D{Rhombus}
 C --> D
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDQ4MDczOTQ5LC0xNzU0MzY4NTI5LC0xND
-E4OTQzNTEsNDQzMjgzNjA0LDQ1NTE1NTUyMl19
+eyJoaXN0b3J5IjpbLTEyNzc1MTc0NjEsLTE3NTQzNjg1MjksLT
+E0MTg5NDM1MSw0NDMyODM2MDQsNDU1MTU1NTIyXX0=
 -->
