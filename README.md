@@ -2,7 +2,7 @@
 
 This is a soft implementation of a processor on the opensource RISC-V ISA. The project was created on Intel Quartus Prime software and tested on DE10 lite.
 
-![Datapath](https://doc-14-c0-docs.googleusercontent.com/docs/securesc/1qeo6f16412v2qmg9igil1mfl144sps1/fttav5j2rlja06eacnab4o6r8hp6es45/1606413150000/16134849217752391994/16134849217752391994/1DccKgiyRgmrlv7ppffc2vNeI7fD2uB7-?e=download&authuser=0&nonce=a8njrll7pnop4&user=16134849217752391994&hash=lp07t7ce6ocoq7s9i443mefd03g6qksa)
+!
 
 ## Specifications
 
@@ -161,5 +161,6 @@ B --> D{Rhombus}
 C --> D
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDQzMjgzNjA0LDQ1NTE1NTUyMl19
+eyJoaXN0b3J5IjpbLTExNTUwNzQzMCw0NDMyODM2MDQsNDU1MT
+U1NTIyXX0=
 -->
