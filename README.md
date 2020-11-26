@@ -59,7 +59,9 @@ Steps to compile project:
 
 ## Programming
 
-You can rename the current file by clicking the file name in the navigation bar or by clicking the **Rename** button in the file explorer.
+ 1. Download visual studio code and open the DE10 workspace in Code folder.
+ 2. Open link.riscv.ld and give absolute path of the file link.common.ld in the include section.
+ 3. 
 
 ## 
 
@@ -184,7 +186,7 @@ B --> D{Rhombus}
 C --> D
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzYyMDk5NTQ4LC0yMDA2NjEwMDMyLDMyOD
-Q1ODc1MiwtMTc1NDM2ODUyOSwtMTQxODk0MzUxLDQ0MzI4MzYw
-NCw0NTUxNTU1MjJdfQ==
+eyJoaXN0b3J5IjpbMTMyNTQ1MzEwMCwtMjAwNjYxMDAzMiwzMj
+g0NTg3NTIsLTE3NTQzNjg1MjksLTE0MTg5NDM1MSw0NDMyODM2
+MDQsNDU1MTU1NTIyXX0=
 -->
