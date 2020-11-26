@@ -37,12 +37,11 @@ This is a soft implementation of a processor on the opensource RISC-V ISA. The p
 +-- _images
 +-- _DE10
 |	+--Code (vscode workspace)
-|	+--RISCV_CORE (Quartus Prime lite 18.1)
+|	+--RISCV_CORE (Quartus Prime lite 18.1 project)
 |	+--tests
-	|	+
+	|	+--Dhrystone
 +-- _src
-|   +-- footer.html
-|   +-- header.html
+
 +-- _layouts
 |   +-- default.html
 |   +-- post.html
@@ -182,6 +181,6 @@ B --> D{Rhombus}
 C --> D
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwMDk0MTc2NjksLTE3NTQzNjg1MjksLT
-E0MTg5NDM1MSw0NDMyODM2MDQsNDU1MTU1NTIyXX0=
+eyJoaXN0b3J5IjpbMzI4NDU4NzUyLC0xNzU0MzY4NTI5LC0xND
+E4OTQzNTEsNDQzMjgzNjA0LDQ1NTE1NTUyMl19
 -->
