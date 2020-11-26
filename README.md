@@ -32,7 +32,7 @@ This is a soft implementation of a processor on the opensource RISC-V ISA. The p
 
 ## Project
 
-All your files and folders are presented as a tree in the file explorer. You can switch from one to another by clicking a file in the tree.
+
 
 ## Programming
 
@@ -161,6 +161,6 @@ B --> D{Rhombus}
 C --> D
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3NTQzNjg1MjksLTE0MTg5NDM1MSw0ND
-MyODM2MDQsNDU1MTU1NTIyXX0=
+eyJoaXN0b3J5IjpbNDQ4MDczOTQ5LC0xNzU0MzY4NTI5LC0xND
+E4OTQzNTEsNDQzMjgzNjA0LDQ1NTE1NTUyMl19
 -->
