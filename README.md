@@ -81,21 +81,20 @@ Steps to compile project:
 	int  timer_read_conf();//read configuration register (OVF,CMPF,PRESCALER)
 	int  timer_read_cnt();//read timer counter
 	**UTIL:**
-	printf,s ported to UART (Does not support floating yet)
-	DELAY function
+	printf ported to UART (Does not support floating yet)
+	delay function
 	**LCD:**
 	1602 LCD  interfaced with GPIOs
 
 ## Examples
 
-
-
+ - LCD
 
 ## ToDos
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI1OTM0NDIsMTAyNzIxMjk3MSwtMjAwNj
-YxMDAzMiwzMjg0NTg3NTIsLTE3NTQzNjg1MjksLTE0MTg5NDM1
-MSw0NDMyODM2MDQsNDU1MTU1NTIyXX0=
+eyJoaXN0b3J5IjpbLTI2NTg0MjgyOSwxMDI3MjEyOTcxLC0yMD
+A2NjEwMDMyLDMyODQ1ODc1MiwtMTc1NDM2ODUyOSwtMTQxODk0
+MzUxLDQ0MzI4MzYwNCw0NTUxNTU1MjJdfQ==
 -->
