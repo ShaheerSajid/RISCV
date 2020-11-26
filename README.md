@@ -65,24 +65,27 @@ Steps to compile project:
  5. Click terminal/run build task.
  6. The file main.hex will be generated inside the flash folder.
  
- ### System Libraries
-	GPIO:
+ ### Libraries
+	**GPIO:**
 	void  gpio_mode(int, int); //pin(0-31), mode(input,output)
 	void  gpio_write(int, int);//pin(0-31),HIGH,LOW
 	int  gpio_read(int);//pin(0-31)
-	SERIAL:
+	**SERIAL:**
 	int  serial_putc(int);//print char
 	void  serial_puts(char*);//print string
 	char  serial_getc();//get char
 	int  serial_available();//if recv
-	TIMER:
+	**TIMER:**
 	void  timer_set_prescaler(int);//configure timer clock
 	void  timer_set_compare(int);//enter compare value
 	int  timer_read_conf();//read configuration register (OVF,CMPF,PRESCALER)
 	int  timer_read_cnt();//read timer counter
-	UTIL:
-	PRINTF,SPRINTF ported to UART (Does not support floating yet)
-	
+	**UTIL:**
+	printf,s ported to UART (Does not support floating yet)
+	DELAY function
+	**LCD:**
+	1602 LCD  interfaced with GPIOs
+
 ## Examples
 
 
@@ -92,7 +95,7 @@ Steps to compile project:
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzMTkwMDg0MSwxMDI3MjEyOTcxLC0yMD
-A2NjEwMDMyLDMyODQ1ODc1MiwtMTc1NDM2ODUyOSwtMTQxODk0
-MzUxLDQ0MzI4MzYwNCw0NTUxNTU1MjJdfQ==
+eyJoaXN0b3J5IjpbMTI1OTM0NDIsMTAyNzIxMjk3MSwtMjAwNj
+YxMDAzMiwzMjg0NTg3NTIsLTE3NTQzNjg1MjksLTE0MTg5NDM1
+MSw0NDMyODM2MDQsNDU1MTU1NTIyXX0=
 -->
