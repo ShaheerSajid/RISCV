@@ -10,7 +10,7 @@ This is a soft implementation of a processor on the opensource RISC-V ISA. The p
  - In-order, single issue, 5-stage pipeline
  - Supported instruction sets: I, M(without div and rem), F(without div)
  - Avalon data bus
- - Single cycle multiply and floating hardware
+ - Single cycle multiply and single precision floating hardware
  - 16KB Instruction Memory and 32KB Data Memory. (Configurable)
  - Logic Utilization (Core only):
 	- Logic Cells: 4366
@@ -96,11 +96,14 @@ Steps to compile project:
 ## ToDos
 
  - [ ] Interrupts
- - [ ] 
- - [ ]  
+ - [ ] CSR 
+ - [ ] Pipelined Div and Rem
+ - [ ] Pipelined FPU
+ - [ ] Branch Prediction
+ - [ ] Improve FMAX
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU3NjA0NDA1MywxMDI3MjEyOTcxLC0yMD
-A2NjEwMDMyLDMyODQ1ODc1MiwtMTc1NDM2ODUyOSwtMTQxODk0
-MzUxLDQ0MzI4MzYwNCw0NTUxNTU1MjJdfQ==
+eyJoaXN0b3J5IjpbNzgwNjQ0MjAyLDEwMjcyMTI5NzEsLTIwMD
+Y2MTAwMzIsMzI4NDU4NzUyLC0xNzU0MzY4NTI5LC0xNDE4OTQz
+NTEsNDQzMjgzNjA0LDQ1NTE1NTUyMl19
 -->
