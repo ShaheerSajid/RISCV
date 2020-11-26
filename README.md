@@ -60,10 +60,11 @@ Steps to compile project:
 ## Programming
 
  1. Download visual studio code and open the DE10 workspace in Code folder.
- 2. Open link.riscv.ld and give absolute path of the file link.common.ld in the include section.
- 3. Add your code to main.c
- 4. Click terminal/run build task
- 5. The file main.hex will be generated inside the flash folder.
+ 2. Download and ext 
+ 3. Open link.riscv.ld and give absolute path of the file link.common.ld in the include section.
+ 4. Add your code to main.c.
+ 5. Click terminal/run build task.
+ 6. The file main.hex will be generated inside the flash folder.
 
 ## 
 
@@ -188,7 +189,7 @@ B --> D{Rhombus}
 C --> D
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDcxNzEwNDgwLC0yMDA2NjEwMDMyLDMyOD
-Q1ODc1MiwtMTc1NDM2ODUyOSwtMTQxODk0MzUxLDQ0MzI4MzYw
-NCw0NTUxNTU1MjJdfQ==
+eyJoaXN0b3J5IjpbLTEyMzUxNzA4MzgsLTIwMDY2MTAwMzIsMz
+I4NDU4NzUyLC0xNzU0MzY4NTI5LC0xNDE4OTQzNTEsNDQzMjgz
+NjA0LDQ1NTE1NTUyMl19
 -->
