@@ -39,9 +39,10 @@ The timing analysis was performed while the FPU was attached so it resulted in p
 	 - Cycles: 1728973
  - Dhrystone
   ![enter image description here](https://raw.githubusercontent.com/ShaheerSajid/RISCV/master/images/dhry.png)
-
-DMIPS/Mhz = ((1/execution time) x runs)/(1757 x Frequency in Mhz)
-	 - **DMIPS/Mhz : 1.13**
+```
+	 DMIPS/Mhz = ( (1/execution time) x runs) / (1757 x Frequency in Mhz) 
+```
+**DMIPS/Mhz : 1.13**
 
 	
 
@@ -122,9 +123,9 @@ Steps to compile project:
  - [ ] Branch Prediction
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTk4MDc0ODQ3LC0xOTMwODIxNzA3LDEyNj
-MzMjQ3MDksLTQ5MjExMzA5NCwtNDQwMDY2NzY1LDYzMDk2ODI1
-NywxMDI3MjEyOTcxLC0yMDA2NjEwMDMyLDMyODQ1ODc1MiwtMT
-c1NDM2ODUyOSwtMTQxODk0MzUxLDQ0MzI4MzYwNCw0NTUxNTU1
-MjJdfQ==
+eyJoaXN0b3J5IjpbLTE5MTk1NjMyNjAsLTE5MzA4MjE3MDcsMT
+I2MzMyNDcwOSwtNDkyMTEzMDk0LC00NDAwNjY3NjUsNjMwOTY4
+MjU3LDEwMjcyMTI5NzEsLTIwMDY2MTAwMzIsMzI4NDU4NzUyLC
+0xNzU0MzY4NTI5LC0xNDE4OTQzNTEsNDQzMjgzNjA0LDQ1NTE1
+NTUyMl19
 -->
