@@ -9,8 +9,8 @@ Initially a proof of concept was developed on logisim. It was at first a single 
 
 Instructions are fetched at a latency of 1 clock cycle. There is a separate ALU for branch and jump address calculation located in the decode stage. Since the branch addresses are calculated in the decode stage, only a single cycle bubble is inserted when the branch is taken. 
 To prevent data hazards, port forwarding is done in the decode stage. The second port forwarding is done in the execution stage where data from data memory is forwarded. This removes the stall needed by instructions that immediately follow load instruction, however since branch is calculated in the decode stage, only then the pipeline is stalled for a single cycle so that the data from load instruction is available if the branch instruction asks for it.
-The memory stage features an avalon master that connects the processor to data memory and other peripherals via the avalon bus. Currently the processor is equipped with GPIO, UART and TIMER peripherals.
-Interrupts are not supported at the moment. Read and write latency is 1 cycle. The avalon waitrequest signal is used to stall the core until the data is available from load. This can increase from more than 1 cycle depending on the type of memory/periphelars used.
+The memory stage features an Avalon master that connects the processor to data memory and other peripherals via the Avalon bus. Currently the processor is equipped with GPIO, UART and TIMER peripherals.
+Interrupts are not supported at the moment. Read and write latency is 1 cycle. The Avalon wait-request signal is used to stall the core until the data is available from load. This can increase from more than 1 cycle depending on the type of memory/peripherals used.
 
  - Logic Utilization (Core only):
 	- Logic Cells: 4366
@@ -106,8 +106,8 @@ Steps to compile project:
  - [ ] Support for SDRAM
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExMjQ5MDg5NjgsLTQ0MDA2Njc2NSw2Mz
-A5NjgyNTcsMTAyNzIxMjk3MSwtMjAwNjYxMDAzMiwzMjg0NTg3
-NTIsLTE3NTQzNjg1MjksLTE0MTg5NDM1MSw0NDMyODM2MDQsND
-U1MTU1NTIyXX0=
+eyJoaXN0b3J5IjpbLTY0NDk0ODM4NywtNDQwMDY2NzY1LDYzMD
+k2ODI1NywxMDI3MjEyOTcxLC0yMDA2NjEwMDMyLDMyODQ1ODc1
+MiwtMTc1NDM2ODUyOSwtMTQxODk0MzUxLDQ0MzI4MzYwNCw0NT
+UxNTU1MjJdfQ==
 -->
