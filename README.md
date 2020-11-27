@@ -29,7 +29,7 @@ Interrupts are not supported at the moment.
 ## Benchmarks and Tests
 
 Each instruction was validated using modelsim after which simple C programs were compiled to validate overall functionality. Dhrystone benchmark was then performed to provide an idea on the overall performance of the processor. 
-The timing analysis was performed while the FPU was attached so it resulted in poor Fmax. I will once again perform the timing analysis after optimiz
+The timing analysis was performed while the FPU was attached so it resulted in poor Fmax. I will once again perform the timing analysis after optimizing and parameterize  the core. There are several long combinational paths which need to be removed
 
 
 - Fmax: 24Mhz
@@ -120,7 +120,7 @@ Steps to compile project:
  - [ ] Branch Prediction
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTUwNzI4MjI0MCwxMjYzMzI0NzA5LC00OT
+eyJoaXN0b3J5IjpbMTM1MjkzNTI4NywxMjYzMzI0NzA5LC00OT
 IxMTMwOTQsLTQ0MDA2Njc2NSw2MzA5NjgyNTcsMTAyNzIxMjk3
 MSwtMjAwNjYxMDAzMiwzMjg0NTg3NTIsLTE3NTQzNjg1MjksLT
 E0MTg5NDM1MSw0NDMyODM2MDQsNDU1MTU1NTIyXX0=
