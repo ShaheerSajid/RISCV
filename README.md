@@ -29,10 +29,10 @@ Interrupts are not supported at the moment.
 ## Benchmarks and Tests
 
 Each instruction was validated using modelsim after which simple C programs were compiled to validate overall functionality. Dhrystone benchmark was then performed to provide an idea on the overall performance of the processor. 
-I have 
+The timing analysis was performed while the FPU was attached so it resulted in poor Fmax. I will once again perform the timing analysis after optimiz
 
 
-- Fmax: 20Mhz
+- Fmax: 24Mhz
 	- Current CPU frequency is 16Mhz
  - Calculation of 100 PI digits:
 	 - 3141592653589793238462643383279502884197169399375105820974944592307816406286208998628034825342117067
@@ -120,8 +120,8 @@ Steps to compile project:
  - [ ] Branch Prediction
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI2MzMyNDcwOSwtNDkyMTEzMDk0LC00ND
-AwNjY3NjUsNjMwOTY4MjU3LDEwMjcyMTI5NzEsLTIwMDY2MTAw
-MzIsMzI4NDU4NzUyLC0xNzU0MzY4NTI5LC0xNDE4OTQzNTEsND
-QzMjgzNjA0LDQ1NTE1NTUyMl19
+eyJoaXN0b3J5IjpbMTUwNzI4MjI0MCwxMjYzMzI0NzA5LC00OT
+IxMTMwOTQsLTQ0MDA2Njc2NSw2MzA5NjgyNTcsMTAyNzIxMjk3
+MSwtMjAwNjYxMDAzMiwzMjg0NTg3NTIsLTE3NTQzNjg1MjksLT
+E0MTg5NDM1MSw0NDMyODM2MDQsNDU1MTU1NTIyXX0=
 -->
