@@ -44,7 +44,7 @@ The timing analysis was performed while the FPU was attached so it resulted in p
 ```
 **DMIPS/Mhz : 1.13**
 
-	
+
 
 ## Project
 
@@ -123,7 +123,7 @@ Steps to compile project:
  - [ ] Branch Prediction
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5MTk1NjMyNjAsLTE5MzA4MjE3MDcsMT
+eyJoaXN0b3J5IjpbLTE4MTk1MTEwNzYsLTE5MzA4MjE3MDcsMT
 I2MzMyNDcwOSwtNDkyMTEzMDk0LC00NDAwNjY3NjUsNjMwOTY4
 MjU3LDEwMjcyMTI5NzEsLTIwMDY2MTAwMzIsMzI4NDU4NzUyLC
 0xNzU0MzY4NTI5LC0xNDE4OTQzNTEsNDQzMjgzNjA0LDQ1NTE1
