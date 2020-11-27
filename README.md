@@ -28,7 +28,8 @@ Interrupts are not supported at the moment.
 
 ## Benchmarks and Tests
 
-Each instruction was validated using modelsim after which simple C programs were compiled to test overa
+Each instruction was validated using modelsim after which simple C programs were compiled to validate overall functionality. Dhrystone benchmark was then performed to provide an idea on the overall performance of the processor. 
+The pres
 
 
 - Fmax: 20Mhz
@@ -119,8 +120,8 @@ Steps to compile project:
  - [ ] Branch Prediction
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM1MTE0Mzc0NywtNDkyMTEzMDk0LC00ND
-AwNjY3NjUsNjMwOTY4MjU3LDEwMjcyMTI5NzEsLTIwMDY2MTAw
-MzIsMzI4NDU4NzUyLC0xNzU0MzY4NTI5LC0xNDE4OTQzNTEsND
-QzMjgzNjA0LDQ1NTE1NTUyMl19
+eyJoaXN0b3J5IjpbLTk2MTQ1OTA5LC00OTIxMTMwOTQsLTQ0MD
+A2Njc2NSw2MzA5NjgyNTcsMTAyNzIxMjk3MSwtMjAwNjYxMDAz
+MiwzMjg0NTg3NTIsLTE3NTQzNjg1MjksLTE0MTg5NDM1MSw0ND
+MyODM2MDQsNDU1MTU1NTIyXX0=
 -->
