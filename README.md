@@ -4,11 +4,7 @@ This is a soft implementation of a processor on the opensource RISC-V ISA. The p
 
 ![enter image description here](https://raw.githubusercontent.com/ShaheerSajid/RISCV/master/images/RISCV.png)
 
- - In-order, single issue, 5-stage pipeline
- - Supported instruction sets: I, M(without div and rem), F(without div)
- - Avalon data bus
- - Single cycle multiply and single precision floating hardware
- - 16KB Instruction Memory and 32KB Data Memory. (Configurable)
+The processor features a single issue, in-order 5-stage pipeline. It currently supports integer, multiply(without div and rem) and single precision IEEE compliant floating point instruction sets.
  - Logic Utilization (Core only):
 	- Logic Cells: 4366
 	- Logic Registers: 802
@@ -103,7 +99,7 @@ Steps to compile project:
  - [ ] Support for SDRAM
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk4MzU3MDcxOCw2MzA5NjgyNTcsMTAyNz
-IxMjk3MSwtMjAwNjYxMDAzMiwzMjg0NTg3NTIsLTE3NTQzNjg1
-MjksLTE0MTg5NDM1MSw0NDMyODM2MDQsNDU1MTU1NTIyXX0=
+eyJoaXN0b3J5IjpbLTE0MjA0ODg0NzYsNjMwOTY4MjU3LDEwMj
+cyMTI5NzEsLTIwMDY2MTAwMzIsMzI4NDU4NzUyLC0xNzU0MzY4
+NTI5LC0xNDE4OTQzNTEsNDQzMjgzNjA0LDQ1NTE1NTUyMl19
 -->
