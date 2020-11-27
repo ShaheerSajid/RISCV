@@ -2,6 +2,8 @@
 
 This is a soft implementation of a processor on the opensource RISC-V ISA. The project was created on Intel Quartus Prime software and tested on DE10 lite. The processor features a single issue, in-order 5-stage pipeline. It currently supports integer, multiply(without div and rem) and single precision IEEE compliant floating point(without float-div) instruction sets.
 
+Initially a proof of concept was developed on logisim. It as at first a single cycle implementation which was later pipelined. 
+
 ![enter image description here](https://raw.githubusercontent.com/ShaheerSajid/RISCV/master/images/RISCV.png)
 
 Instructions are fetched at a latency of 1 clock cycle. There is a separate ALU for branch and jump address calculation located in the decode stage. Since the branch addresses are calculated in the decode stage, only a single cycle bubble is inserted when the branch is taken. 
@@ -103,7 +105,7 @@ Steps to compile project:
  - [ ] Support for SDRAM
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY2MTc3MDk0MSw2MzA5NjgyNTcsMTAyNz
+eyJoaXN0b3J5IjpbLTQ0MDA2Njc2NSw2MzA5NjgyNTcsMTAyNz
 IxMjk3MSwtMjAwNjYxMDAzMiwzMjg0NTg3NTIsLTE3NTQzNjg1
 MjksLTE0MTg5NDM1MSw0NDMyODM2MDQsNDU1MTU1NTIyXX0=
 -->
