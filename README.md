@@ -2,13 +2,8 @@
 
 This is a soft implementation of a processor on the opensource RISC-V ISA. The project was created on Intel Quartus Prime software and tested on DE10 lite.
 
-
-
 ![enter image description here](https://raw.githubusercontent.com/ShaheerSajid/RISCV/master/images/RISCV.png)
 
-## Specifications
-
- - 32 bit
  - In-order, single issue, 5-stage pipeline
  - Supported instruction sets: I, M(without div and rem), F(without div)
  - Avalon data bus
@@ -108,7 +103,7 @@ Steps to compile project:
  - [ ] Support for SDRAM
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA4NDIwNDAwNSw2MzA5NjgyNTcsMTAyNz
+eyJoaXN0b3J5IjpbMTk4MzU3MDcxOCw2MzA5NjgyNTcsMTAyNz
 IxMjk3MSwtMjAwNjYxMDAzMiwzMjg0NTg3NTIsLTE3NTQzNjg1
 MjksLTE0MTg5NDM1MSw0NDMyODM2MDQsNDU1MTU1NTIyXX0=
 -->
