@@ -19,12 +19,12 @@ Hardware divide is removed to reduce logic usage but that can be incorporated in
 
 Interrupts are not supported at the moment. 
 
-
-
- - Logic Utilization (Core only):
+### Logic Utilization (Core only)
+```
 	- Logic Cells: 4366
 	- Logic Registers: 802
-	 - Memory Bits: 4096
+	- Memory Bits: 4096
+```
 
 ## Benchmarks and Tests
 
@@ -48,8 +48,8 @@ The timing analysis was performed while the FPU was attached so it resulted in p
 
 ## Project
 
+### Folder Structure
 ```
-Folder Structure
 .
 +-- _images
 +-- _DE10 Lite
@@ -127,9 +127,9 @@ Folder Structure
  - [ ] Branch Prediction
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk0NjcxODg3NiwtMTkzMDgyMTcwNywxMj
-YzMzI0NzA5LC00OTIxMTMwOTQsLTQ0MDA2Njc2NSw2MzA5Njgy
-NTcsMTAyNzIxMjk3MSwtMjAwNjYxMDAzMiwzMjg0NTg3NTIsLT
-E3NTQzNjg1MjksLTE0MTg5NDM1MSw0NDMyODM2MDQsNDU1MTU1
-NTIyXX0=
+eyJoaXN0b3J5IjpbMzM4NTI2MjA3LC0xOTMwODIxNzA3LDEyNj
+MzMjQ3MDksLTQ5MjExMzA5NCwtNDQwMDY2NzY1LDYzMDk2ODI1
+NywxMDI3MjEyOTcxLC0yMDA2NjEwMDMyLDMyODQ1ODc1MiwtMT
+c1NDM2ODUyOSwtMTQxODk0MzUxLDQ0MzI4MzYwNCw0NTUxNTU1
+MjJdfQ==
 -->
