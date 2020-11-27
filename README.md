@@ -40,7 +40,7 @@ The timing analysis was performed while the FPU was attached so it resulted in p
  - Dhrystone
   ![enter image description here](https://raw.githubusercontent.com/ShaheerSajid/RISCV/master/images/dhry.png)
 
-DMIPS/Mhz = ((1/execution time)**no of runs)/(1757** Frequency in Mhz)
+DMIPS/Mhz = ((1/execution time) x runs)/(1757 x Frequency in Mhz)
 	 - **DMIPS/Mhz : 1.13**
 
 	
@@ -122,8 +122,9 @@ Steps to compile project:
  - [ ] Branch Prediction
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5MzA4MjE3MDcsMTI2MzMyNDcwOSwtND
-kyMTEzMDk0LC00NDAwNjY3NjUsNjMwOTY4MjU3LDEwMjcyMTI5
-NzEsLTIwMDY2MTAwMzIsMzI4NDU4NzUyLC0xNzU0MzY4NTI5LC
-0xNDE4OTQzNTEsNDQzMjgzNjA0LDQ1NTE1NTUyMl19
+eyJoaXN0b3J5IjpbNTk4MDc0ODQ3LC0xOTMwODIxNzA3LDEyNj
+MzMjQ3MDksLTQ5MjExMzA5NCwtNDQwMDY2NzY1LDYzMDk2ODI1
+NywxMDI3MjEyOTcxLC0yMDA2NjEwMDMyLDMyODQ1ODc1MiwtMT
+c1NDM2ODUyOSwtMTQxODk0MzUxLDQ0MzI4MzYwNCw0NTUxNTU1
+MjJdfQ==
 -->
