@@ -5,6 +5,7 @@ This is a soft implementation of a processor on the opensource RISC-V ISA. The p
 ![enter image description here](https://raw.githubusercontent.com/ShaheerSajid/RISCV/master/images/RISCV.png)
 
 The processor features a single issue, in-order 5-stage pipeline. It currently supports integer, multiply(without div and rem) and single precision IEEE compliant floating point(without float-div) instruction sets. Instructions are fetched at a latency of 1 clock cycle. There is a separate ALU for branch and jump address calculation located in the decode stage. Since the branch addresses are calculated in the decode stage, a single cycle bubble is inserted when the branch is taken. 
+To prevent data hazards, port forwarding is done in the decode stage. The second port forwarding is done in the execution stage where data from data memory is forwarded.
  - Logic Utilization (Core only):
 	- Logic Cells: 4366
 	- Logic Registers: 802
@@ -99,7 +100,7 @@ Steps to compile project:
  - [ ] Support for SDRAM
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3NTk0MTc1ODIsNjMwOTY4MjU3LDEwMj
-cyMTI5NzEsLTIwMDY2MTAwMzIsMzI4NDU4NzUyLC0xNzU0MzY4
-NTI5LC0xNDE4OTQzNTEsNDQzMjgzNjA0LDQ1NTE1NTUyMl19
+eyJoaXN0b3J5IjpbODQwNTI1MTUzLDYzMDk2ODI1NywxMDI3Mj
+EyOTcxLC0yMDA2NjEwMDMyLDMyODQ1ODc1MiwtMTc1NDM2ODUy
+OSwtMTQxODk0MzUxLDQ0MzI4MzYwNCw0NTUxNTU1MjJdfQ==
 -->
