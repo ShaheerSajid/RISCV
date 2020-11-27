@@ -28,7 +28,10 @@ Interrupts are not supported at the moment.
 
 ## Benchmarks and Tests
 
- - Fmax: 20Mhz
+Each instruction was validated using modelsim after which simple C programs were compiled to test overa
+
+
+- Fmax: 20Mhz
 	- Current CPU frequency is 16Mhz
  - Calculation of 100 PI digits:
 	 - 3141592653589793238462643383279502884197169399375105820974944592307816406286208998628034825342117067
@@ -116,8 +119,8 @@ Steps to compile project:
  - [ ] Branch Prediction
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3OTA3MjMwNDQsLTQ5MjExMzA5NCwtND
-QwMDY2NzY1LDYzMDk2ODI1NywxMDI3MjEyOTcxLC0yMDA2NjEw
-MDMyLDMyODQ1ODc1MiwtMTc1NDM2ODUyOSwtMTQxODk0MzUxLD
-Q0MzI4MzYwNCw0NTUxNTU1MjJdfQ==
+eyJoaXN0b3J5IjpbLTM1MTE0Mzc0NywtNDkyMTEzMDk0LC00ND
+AwNjY3NjUsNjMwOTY4MjU3LDEwMjcyMTI5NzEsLTIwMDY2MTAw
+MzIsMzI4NDU4NzUyLC0xNzU0MzY4NTI5LC0xNDE4OTQzNTEsND
+QzMjgzNjA0LDQ1NTE1NTUyMl19
 -->
