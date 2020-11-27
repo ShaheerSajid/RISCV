@@ -49,6 +49,7 @@ The timing analysis was performed while the FPU was attached so it resulted in p
 ## Project
 
 ```
+Folder Structure
 .
 +-- _images
 +-- _DE10 Lite
@@ -62,7 +63,8 @@ The timing analysis was performed while the FPU was attached so it resulted in p
 |	+--timer
 |	+--serial
 ```
-Steps to compile project:
+
+### Steps to compile project:
 
  1. Download and install Quartus Prime Lite 18.1
  2. Open RISCV_CORE.qpf in DE10 Lite/RISCV_CORE
@@ -71,6 +73,8 @@ Steps to compile project:
  6. Save and generate
  7. Compile Quartus project
  8. You only need to compile once after which just update memory initialization file and program device again.
+
+
 
 ## Programming
 
@@ -123,9 +127,9 @@ Steps to compile project:
  - [ ] Branch Prediction
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4MTk1MTEwNzYsLTE5MzA4MjE3MDcsMT
-I2MzMyNDcwOSwtNDkyMTEzMDk0LC00NDAwNjY3NjUsNjMwOTY4
-MjU3LDEwMjcyMTI5NzEsLTIwMDY2MTAwMzIsMzI4NDU4NzUyLC
-0xNzU0MzY4NTI5LC0xNDE4OTQzNTEsNDQzMjgzNjA0LDQ1NTE1
-NTUyMl19
+eyJoaXN0b3J5IjpbMTk0NjcxODg3NiwtMTkzMDgyMTcwNywxMj
+YzMzI0NzA5LC00OTIxMTMwOTQsLTQ0MDA2Njc2NSw2MzA5Njgy
+NTcsMTAyNzIxMjk3MSwtMjAwNjYxMDAzMiwzMjg0NTg3NTIsLT
+E3NTQzNjg1MjksLTE0MTg5NDM1MSw0NDMyODM2MDQsNDU1MTU1
+NTIyXX0=
 -->
