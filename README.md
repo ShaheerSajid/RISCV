@@ -20,6 +20,7 @@ Hardware divide is removed to reduce logic usage but that can be incorporated in
 Interrupts are not supported at the moment. 
 
 
+
  - Logic Utilization (Core only):
 	- Logic Cells: 4366
 	- Logic Registers: 802
@@ -115,8 +116,8 @@ Steps to compile project:
  - [ ] Branch Prediction
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTcxMTg0OTA3OCwtNDkyMTEzMDk0LC00ND
-AwNjY3NjUsNjMwOTY4MjU3LDEwMjcyMTI5NzEsLTIwMDY2MTAw
-MzIsMzI4NDU4NzUyLC0xNzU0MzY4NTI5LC0xNDE4OTQzNTEsND
-QzMjgzNjA0LDQ1NTE1NTUyMl19
+eyJoaXN0b3J5IjpbLTE3OTA3MjMwNDQsLTQ5MjExMzA5NCwtND
+QwMDY2NzY1LDYzMDk2ODI1NywxMDI3MjEyOTcxLC0yMDA2NjEw
+MDMyLDMyODQ1ODc1MiwtMTc1NDM2ODUyOSwtMTQxODk0MzUxLD
+Q0MzI4MzYwNCw0NTUxNTU1MjJdfQ==
 -->
