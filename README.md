@@ -28,10 +28,9 @@ Interrupts are not supported at the moment.
 
 ## Benchmarks and Tests
 
-Each instruction was validated using modelsim after which simple C programs were compiled to validate overall functionality. Dhrystone benchmark was then performed to provide an idea on the overall performance of the processor. 
+Each instruction was validated using modelsim after which simple C programs were compiled to validate overall functionality. Dhrystone v2.1 benchmark was then performed to provide an idea on the overall performance of the processor. 
 
-The timing analysis was performed while the FPU was attached so it resulted in poor Fmax. I will once again perform the timing analysis after optimizing and parameterize  the core. . Since this was more of an effort to complete the functionality of the performance first 
-
+The timing analysis was performed while the FPU was attached so it resulted in poor Fmax. I will once again perform the timing analysis after optimizing and parameterize  the core. Since this was more of an effort to complete the functionality of the performance first, phase two will be to maximize its performance.
 
 - Fmax: 24Mhz
 	- Current CPU frequency is 16Mhz
@@ -121,7 +120,7 @@ Steps to compile project:
  - [ ] Branch Prediction
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg1ODYxNjE4LDEyNjMzMjQ3MDksLTQ5Mj
+eyJoaXN0b3J5IjpbNjk0ODAwMjg2LDEyNjMzMjQ3MDksLTQ5Mj
 ExMzA5NCwtNDQwMDY2NzY1LDYzMDk2ODI1NywxMDI3MjEyOTcx
 LC0yMDA2NjEwMDMyLDMyODQ1ODc1MiwtMTc1NDM2ODUyOSwtMT
 QxODk0MzUxLDQ0MzI4MzYwNCw0NTUxNTU1MjJdfQ==
