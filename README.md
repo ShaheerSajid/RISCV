@@ -27,13 +27,10 @@ Interrupts are not supported at the moment.
 
 Each instruction was validated using modelsim after which simple C programs were compiled to validate overall functionality. Dhrystone v2.1 benchmark was then performed to provide an idea on the overall performance of the processor. 
 
-The timing analysis was performed while the FPU was attached so it resulted in poor Fmax. I will once again perform the timing analysis after optimizing and parameterize  the core. Since this was more of an effort to complete the functionality of the performance first, phase two will be to maximize its performance.
+### Calculation of 100 PI digits:
 
-- Fmax: 24Mhz
-	- Current CPU frequency is 16Mhz
- - Calculation of 100 PI digits:
-	 - 3141592653589793238462643383279502884197169399375105820974944592307816406286208998628034825342117067
-	 - Cycles: 1728973
+3141592653589793238462643383279502884197169399375105820974944592307816406286209998628034825342117067
+Cycles: 1728973
  - Dhrystone
   ![enter image description here](https://raw.githubusercontent.com/ShaheerSajid/RISCV/master/images/dhry.png)
 ```
@@ -124,9 +121,10 @@ The timing analysis was performed while the FPU was attached so it resulted in p
  - [ ] Branch Prediction
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQzMjY1ODk0MCwxMDE2MDY3OTMxLDMzOD
-UyNjIwNywtMTkzMDgyMTcwNywxMjYzMzI0NzA5LC00OTIxMTMw
-OTQsLTQ0MDA2Njc2NSw2MzA5NjgyNTcsMTAyNzIxMjk3MSwtMj
-AwNjYxMDAzMiwzMjg0NTg3NTIsLTE3NTQzNjg1MjksLTE0MTg5
-NDM1MSw0NDMyODM2MDQsNDU1MTU1NTIyXX0=
+eyJoaXN0b3J5IjpbLTIwMjU4NTc1MiwxNDMyNjU4OTQwLDEwMT
+YwNjc5MzEsMzM4NTI2MjA3LC0xOTMwODIxNzA3LDEyNjMzMjQ3
+MDksLTQ5MjExMzA5NCwtNDQwMDY2NzY1LDYzMDk2ODI1NywxMD
+I3MjEyOTcxLC0yMDA2NjEwMDMyLDMyODQ1ODc1MiwtMTc1NDM2
+ODUyOSwtMTQxODk0MzUxLDQ0MzI4MzYwNCw0NTUxNTU1MjJdfQ
+==
 -->
