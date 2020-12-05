@@ -4,7 +4,7 @@ This is a soft implementation of a processor on the opensource RISC-V ISA. The p
 
 Initially a proof of concept was developed on logisim. It was at first a single cycle implementation which was later pipelined. Later on it was moved to verilog.
 
-
+![enter image description here](https://raw.githubusercontent.com/ShaheerSajid/RISCV/master/images/RISCV.png)
 
 
 Instructions are fetched at a latency of 1 clock cycle. There is a separate ALU for branch and jump address calculation located in the decode stage. Since the branch addresses are calculated in the decode stage, only a single cycle bubble is inserted when the branch is taken. 
@@ -127,7 +127,7 @@ The timing analysis was performed while the FPU was attached so it resulted in p
  - [ ] Branch Prediction
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTcxMTI2Njg0OCwzMzg1MjYyMDcsLTE5Mz
+eyJoaXN0b3J5IjpbMTAxNjA2NzkzMSwzMzg1MjYyMDcsLTE5Mz
 A4MjE3MDcsMTI2MzMyNDcwOSwtNDkyMTEzMDk0LC00NDAwNjY3
 NjUsNjMwOTY4MjU3LDEwMjcyMTI5NzEsLTIwMDY2MTAwMzIsMz
 I4NDU4NzUyLC0xNzU0MzY4NTI5LC0xNDE4OTQzNTEsNDQzMjgz
