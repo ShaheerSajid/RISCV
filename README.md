@@ -29,7 +29,7 @@ Each instruction was validated using modelsim after which simple C programs were
 
 ### Calculation of 100 PI digits:
 
-This test was performed on integer only 
+This test was performed on integer only core.
 ```
 #define  SCALE  10000
 #define  ARRINIT  2000
@@ -148,10 +148,9 @@ Cycles: 1728973
  - [ ] Branch Prediction
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM1NTQzMjg4OCwxNDMyNjU4OTQwLDEwMT
-YwNjc5MzEsMzM4NTI2MjA3LC0xOTMwODIxNzA3LDEyNjMzMjQ3
-MDksLTQ5MjExMzA5NCwtNDQwMDY2NzY1LDYzMDk2ODI1NywxMD
-I3MjEyOTcxLC0yMDA2NjEwMDMyLDMyODQ1ODc1MiwtMTc1NDM2
-ODUyOSwtMTQxODk0MzUxLDQ0MzI4MzYwNCw0NTUxNTU1MjJdfQ
-==
+eyJoaXN0b3J5IjpbODkwNzgzNzgzLDE0MzI2NTg5NDAsMTAxNj
+A2NzkzMSwzMzg1MjYyMDcsLTE5MzA4MjE3MDcsMTI2MzMyNDcw
+OSwtNDkyMTEzMDk0LC00NDAwNjY3NjUsNjMwOTY4MjU3LDEwMj
+cyMTI5NzEsLTIwMDY2MTAwMzIsMzI4NDU4NzUyLC0xNzU0MzY4
+NTI5LC0xNDE4OTQzNTEsNDQzMjgzNjA0LDQ1NTE1NTUyMl19
 -->
