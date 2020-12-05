@@ -55,11 +55,12 @@ printf("\n100 PI digits\n");
 printf("Cycles: %d\n",cnt);
 }
 
-Serial W
+Serial Window:
 
-
+3141592653589793238462643383279502884197169399375105820974944592307816406286208998628034825342117067
+Cycles: 2282586
 ```
-Cycles: 1728973
+
 ### Dhrystone
   ![enter image description here](https://raw.githubusercontent.com/ShaheerSajid/RISCV/master/images/dhry.png)
 ```
@@ -150,7 +151,7 @@ Cycles: 1728973
  - [ ] Branch Prediction
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3MDk1MjkzOCw4OTA3ODM3ODMsMTQzMj
+eyJoaXN0b3J5IjpbMTY5Nzk4NTEyMCw4OTA3ODM3ODMsMTQzMj
 Y1ODk0MCwxMDE2MDY3OTMxLDMzODUyNjIwNywtMTkzMDgyMTcw
 NywxMjYzMzI0NzA5LC00OTIxMTMwOTQsLTQ0MDA2Njc2NSw2Mz
 A5NjgyNTcsMTAyNzIxMjk3MSwtMjAwNjYxMDAzMiwzMjg0NTg3
