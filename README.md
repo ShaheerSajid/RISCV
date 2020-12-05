@@ -20,11 +20,8 @@ Hardware divide is removed to reduce logic usage but that can be incorporated in
 Interrupts are not supported at the moment. 
 
 ### Logic Utilization (Core only)
-```
-	- Logic Cells: 4366
-	- Logic Registers: 802
-	- Memory Bits: 4096
-```
+
+![enter image description here](https://raw.githubusercontent.com/ShaheerSajid/RISCV/master/images/logic.png)
 
 ## Benchmarks and Tests
 
@@ -127,9 +124,9 @@ The timing analysis was performed while the FPU was attached so it resulted in p
  - [ ] Branch Prediction
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTAxNjA2NzkzMSwzMzg1MjYyMDcsLTE5Mz
-A4MjE3MDcsMTI2MzMyNDcwOSwtNDkyMTEzMDk0LC00NDAwNjY3
-NjUsNjMwOTY4MjU3LDEwMjcyMTI5NzEsLTIwMDY2MTAwMzIsMz
-I4NDU4NzUyLC0xNzU0MzY4NTI5LC0xNDE4OTQzNTEsNDQzMjgz
-NjA0LDQ1NTE1NTUyMl19
+eyJoaXN0b3J5IjpbMTQzMjY1ODk0MCwxMDE2MDY3OTMxLDMzOD
+UyNjIwNywtMTkzMDgyMTcwNywxMjYzMzI0NzA5LC00OTIxMTMw
+OTQsLTQ0MDA2Njc2NSw2MzA5NjgyNTcsMTAyNzIxMjk3MSwtMj
+AwNjYxMDAzMiwzMjg0NTg3NTIsLTE3NTQzNjg1MjksLTE0MTg5
+NDM1MSw0NDMyODM2MDQsNDU1MTU1NTIyXX0=
 -->
