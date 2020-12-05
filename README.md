@@ -62,16 +62,12 @@ Cycles: 2282586
 ```
 
 ### Dhrystone
-
-https://raw.githubusercontent.com/ShaheerSajid/RISCV/master/images/dhry_out.png
+![enter image description here](https://raw.githubusercontent.com/ShaheerSajid/RISCV/master/images/dhry_out.png)
 ```
 	 DMIPS/Mhz = ( (1/execution time) x runs) / (1757 x Frequency in Mhz) 
 ```
 
 ![enter image description here](https://raw.githubusercontent.com/ShaheerSajid/RISCV/master/images/dhry.png)
-
-
-
 
 
 ## Project
@@ -155,11 +151,11 @@ https://raw.githubusercontent.com/ShaheerSajid/RISCV/master/images/dhry_out.png
  - [ ] Branch Prediction
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjAyMzY2OTM3MSwtOTIyNjgyMTAsLTE3MT
-MyMjM2NTgsLTEyNzk5MzIwNjAsMTY5Nzk4NTEyMCw4OTA3ODM3
-ODMsMTQzMjY1ODk0MCwxMDE2MDY3OTMxLDMzODUyNjIwNywtMT
-kzMDgyMTcwNywxMjYzMzI0NzA5LC00OTIxMTMwOTQsLTQ0MDA2
-Njc2NSw2MzA5NjgyNTcsMTAyNzIxMjk3MSwtMjAwNjYxMDAzMi
-wzMjg0NTg3NTIsLTE3NTQzNjg1MjksLTE0MTg5NDM1MSw0NDMy
-ODM2MDRdfQ==
+eyJoaXN0b3J5IjpbNzYxNDEyMzAyLC05MjI2ODIxMCwtMTcxMz
+IyMzY1OCwtMTI3OTkzMjA2MCwxNjk3OTg1MTIwLDg5MDc4Mzc4
+MywxNDMyNjU4OTQwLDEwMTYwNjc5MzEsMzM4NTI2MjA3LC0xOT
+MwODIxNzA3LDEyNjMzMjQ3MDksLTQ5MjExMzA5NCwtNDQwMDY2
+NzY1LDYzMDk2ODI1NywxMDI3MjEyOTcxLC0yMDA2NjEwMDMyLD
+MyODQ1ODc1MiwtMTc1NDM2ODUyOSwtMTQxODk0MzUxLDQ0MzI4
+MzYwNF19
 -->
