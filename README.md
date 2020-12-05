@@ -9,7 +9,7 @@ Initially a proof of concept was developed on logisim. It was at first a single 
 
 Instructions are fetched at a latency of 1 clock cycle. There is a separate ALU for branch and jump address calculation located in the decode stage. Since the branch addresses are calculated in the decode stage, only a single cycle bubble is inserted when the branch is taken. 
 
-To prevent data hazards, port forwarding is done in the decode stage. The second port forwarding is done in the execution stage where data from data memory is forwarded. This removes the stall needed by instructions that immediately follow load instruction, however since branch is calculated in the decode stage, only then the pipeline is stalled for a single cycle so that the data from load instruction is available if the branch instruction asks for it.
+To prevent data hazards, port forwarding is done in the decode stage. This removes the stall needed by instructions that immediately follow load instruction, however since branch is calculated in the decode stage, only then the pipeline is stalled for a single cycle so that the data from previous instruction is available if the branch instruction asks for it.
 
 The memory stage features an Avalon master that connects the processor to data memory and other peripherals via the Avalon bus. Currently the processor is equipped with GPIO, UART and TIMER peripherals. Read and write latency is 1 cycle. The Avalon wait-request signal is used to stall the core until the data is available from load. This can increase from more than 1 cycle depending on the type of memory/peripherals used.
 
@@ -151,11 +151,11 @@ Cycles: 2282586
  - [ ] Branch Prediction
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzYxNDEyMzAyLC05MjI2ODIxMCwtMTcxMz
-IyMzY1OCwtMTI3OTkzMjA2MCwxNjk3OTg1MTIwLDg5MDc4Mzc4
-MywxNDMyNjU4OTQwLDEwMTYwNjc5MzEsMzM4NTI2MjA3LC0xOT
-MwODIxNzA3LDEyNjMzMjQ3MDksLTQ5MjExMzA5NCwtNDQwMDY2
-NzY1LDYzMDk2ODI1NywxMDI3MjEyOTcxLC0yMDA2NjEwMDMyLD
-MyODQ1ODc1MiwtMTc1NDM2ODUyOSwtMTQxODk0MzUxLDQ0MzI4
-MzYwNF19
+eyJoaXN0b3J5IjpbMTE0MzQxNzE2NCw3NjE0MTIzMDIsLTkyMj
+Y4MjEwLC0xNzEzMjIzNjU4LC0xMjc5OTMyMDYwLDE2OTc5ODUx
+MjAsODkwNzgzNzgzLDE0MzI2NTg5NDAsMTAxNjA2NzkzMSwzMz
+g1MjYyMDcsLTE5MzA4MjE3MDcsMTI2MzMyNDcwOSwtNDkyMTEz
+MDk0LC00NDAwNjY3NjUsNjMwOTY4MjU3LDEwMjcyMTI5NzEsLT
+IwMDY2MTAwMzIsMzI4NDU4NzUyLC0xNzU0MzY4NTI5LC0xNDE4
+OTQzNTFdfQ==
 -->
