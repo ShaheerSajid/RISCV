@@ -29,9 +29,65 @@ Each instruction was validated using modelsim after which simple C programs were
 
 ### Calculation of 100 PI digits:
 
-3141592653589793238462643383279502884197169399375105820974944592307816406286209998628034825342117067
+
+```
+#define  SCALE  10000
+#define  ARRINIT  2000
+
+  
+
+nt  main(void)
+
+{
+
+gpio_mode(10,0);
+
+timer_set_prescaler(PRE_1);
+
+  
+
+int  digits = 100*14/4;
+
+int  carry = 0;
+
+int  arr[digits + 1];
+
+for (int  i = 0; i <= digits; ++i)
+
+arr[i] = ARRINIT;
+
+for (int  i = digits; i > 0; i-= 14) {
+
+int  sum = 0;
+
+for (int  j = i; j > 0; --j) {
+
+sum = sum * j + SCALE * arr[j];
+
+arr[j] = sum % (j * 2 - 1);
+
+sum /= j * 2 - 1;
+
+}
+
+//printf("%04d",carry+sum/SCALE);
+
+carry = sum % SCALE;
+
+}
+
+int  val;
+
+char  snum[20];
+
+int  cnt = timer_read_cnt();
+
+printf("\n100 PI digits\n");
+
+printf("Cycles: %d\n",cnt);
+```
 Cycles: 1728973
- - Dhrystone
+### Dhrystone
   ![enter image description here](https://raw.githubusercontent.com/ShaheerSajid/RISCV/master/images/dhry.png)
 ```
 	 DMIPS/Mhz = ( (1/execution time) x runs) / (1757 x Frequency in Mhz) 
@@ -121,10 +177,9 @@ Cycles: 1728973
  - [ ] Branch Prediction
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwMjU4NTc1MiwxNDMyNjU4OTQwLDEwMT
-YwNjc5MzEsMzM4NTI2MjA3LC0xOTMwODIxNzA3LDEyNjMzMjQ3
-MDksLTQ5MjExMzA5NCwtNDQwMDY2NzY1LDYzMDk2ODI1NywxMD
-I3MjEyOTcxLC0yMDA2NjEwMDMyLDMyODQ1ODc1MiwtMTc1NDM2
-ODUyOSwtMTQxODk0MzUxLDQ0MzI4MzYwNCw0NTUxNTU1MjJdfQ
-==
+eyJoaXN0b3J5IjpbODk5OTEwMzEsMTQzMjY1ODk0MCwxMDE2MD
+Y3OTMxLDMzODUyNjIwNywtMTkzMDgyMTcwNywxMjYzMzI0NzA5
+LC00OTIxMTMwOTQsLTQ0MDA2Njc2NSw2MzA5NjgyNTcsMTAyNz
+IxMjk3MSwtMjAwNjYxMDAzMiwzMjg0NTg3NTIsLTE3NTQzNjg1
+MjksLTE0MTg5NDM1MSw0NDMyODM2MDQsNDU1MTU1NTIyXX0=
 -->
