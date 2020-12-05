@@ -26,10 +26,10 @@ Interrupts are not supported at the moment.
 ## Benchmarks and Tests
 
 Each instruction was validated using modelsim after which simple C programs were compiled to validate overall functionality. Dhrystone v2.1 benchmark was then performed to provide an idea on the overall performance of the processor. 
+These tests was performed on integer only core.
 
 ### Calculation of 100 PI digits:
 
-This test was performed on integer only core.
 ```
 #define  SCALE  10000
 #define  ARRINIT  2000
@@ -151,10 +151,10 @@ Cycles: 2282586
  - [ ] Branch Prediction
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY5Nzk4NTEyMCw4OTA3ODM3ODMsMTQzMj
-Y1ODk0MCwxMDE2MDY3OTMxLDMzODUyNjIwNywtMTkzMDgyMTcw
-NywxMjYzMzI0NzA5LC00OTIxMTMwOTQsLTQ0MDA2Njc2NSw2Mz
-A5NjgyNTcsMTAyNzIxMjk3MSwtMjAwNjYxMDAzMiwzMjg0NTg3
-NTIsLTE3NTQzNjg1MjksLTE0MTg5NDM1MSw0NDMyODM2MDQsND
-U1MTU1NTIyXX0=
+eyJoaXN0b3J5IjpbLTEyNzk5MzIwNjAsMTY5Nzk4NTEyMCw4OT
+A3ODM3ODMsMTQzMjY1ODk0MCwxMDE2MDY3OTMxLDMzODUyNjIw
+NywtMTkzMDgyMTcwNywxMjYzMzI0NzA5LC00OTIxMTMwOTQsLT
+Q0MDA2Njc2NSw2MzA5NjgyNTcsMTAyNzIxMjk3MSwtMjAwNjYx
+MDAzMiwzMjg0NTg3NTIsLTE3NTQzNjg1MjksLTE0MTg5NDM1MS
+w0NDMyODM2MDQsNDU1MTU1NTIyXX0=
 -->
