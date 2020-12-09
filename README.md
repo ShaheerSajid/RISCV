@@ -67,6 +67,7 @@ Cycles: 2282586
 
 ![enter image description here](https://raw.githubusercontent.com/ShaheerSajid/RISCV/master/images/dhry.png)
 
+### Coremark
 
 ## Project
 
@@ -149,11 +150,11 @@ Cycles: 2282586
  - [ ] Branch Prediction
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg3NjE0NDgxMCw3NjE0MTIzMDIsLTkyMj
-Y4MjEwLC0xNzEzMjIzNjU4LC0xMjc5OTMyMDYwLDE2OTc5ODUx
-MjAsODkwNzgzNzgzLDE0MzI2NTg5NDAsMTAxNjA2NzkzMSwzMz
-g1MjYyMDcsLTE5MzA4MjE3MDcsMTI2MzMyNDcwOSwtNDkyMTEz
-MDk0LC00NDAwNjY3NjUsNjMwOTY4MjU3LDEwMjcyMTI5NzEsLT
-IwMDY2MTAwMzIsMzI4NDU4NzUyLC0xNzU0MzY4NTI5LC0xNDE4
-OTQzNTFdfQ==
+eyJoaXN0b3J5IjpbMjA3NjY0MzI5MSwtODc2MTQ0ODEwLDc2MT
+QxMjMwMiwtOTIyNjgyMTAsLTE3MTMyMjM2NTgsLTEyNzk5MzIw
+NjAsMTY5Nzk4NTEyMCw4OTA3ODM3ODMsMTQzMjY1ODk0MCwxMD
+E2MDY3OTMxLDMzODUyNjIwNywtMTkzMDgyMTcwNywxMjYzMzI0
+NzA5LC00OTIxMTMwOTQsLTQ0MDA2Njc2NSw2MzA5NjgyNTcsMT
+AyNzIxMjk3MSwtMjAwNjYxMDAzMiwzMjg0NTg3NTIsLTE3NTQz
+Njg1MjldfQ==
 -->
