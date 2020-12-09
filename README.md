@@ -68,13 +68,74 @@ Cycles: 2282586
 ![enter image description here](https://raw.githubusercontent.com/ShaheerSajid/RISCV/master/images/dhry.png)
 
 ### Coremark
-The coremark benchmark was compiled with compiler options:
+```
+2K performance run parameters for coremark.
+CoreMark Size    : 666u
+Total ticks      : 714622498u
+Total time (secs): 14
+Iterations/Sec   : 42
+Iterations       : 600u
+Compiler version : GCC8.3.0
+Compiler flags   : -Os,-DITERATIONS=0, -mabi=ilp32, -march=rv32i
+Memory location  : STACK
+seedcrc          : 0xe9f5
+[0]crclist       : 0xe714
+[0]crcmatrix     : 0x1fd7
+[0]crcstate      : 0x8e3a
+[0]crcfinal      : 0xbd59
+Correct operation validated. See README.md for run and reporting rules.
+
+2K performance run parameters for coremark.
+CoreMark Size    : 666u
+Total ticks      : 624973165u
+Total time (secs): 12
+Iterations/Sec   : 50
+Iterations       : 600u
+Compiler version : GCC8.3.0
+Compiler flags   : -O3,-DITERATIONS=0, -mabi=ilp32, -march=rv32i
+Memory location  : STACK
+seedcrc          : 0xe9f5
+[0]crclist       : 0xe714
+[0]crcmatrix     : 0x1fd7
+[0]crcstate      : 0x8e3a
+[0]crcfinal      : 0xbd59
+Correct operation validated. See README.md for run and reporting rules.
 
 
+2K performance run parameters for coremark.
+CoreMark Size    : 666u
+Total ticks      : 587549614u
+Total time (secs): 11
+Iterations/Sec   : 100
+Iterations       : 1100u
+Compiler version : GCC8.3.0
+Compiler flags   : -Os,-DITERATIONS=0, -mabi=ilp32, -march=rv32im
+Memory location  : STACK
+seedcrc          : 0xe9f5
+[0]crclist       : 0xe714
+[0]crcmatrix     : 0x1fd7
+[0]crcstate      : 0x8e3a
+[0]crcfinal      : 0x33ff
+Correct operation validated. See README.md for run and reporting rules.
 
-![enter image description here](https://raw.githubusercontent.com/ShaheerSajid/RISCV/master/images/coremark.png)
+2K performance run parameters for coremark.
+CoreMark Size    : 666u
+Total ticks      : 844810491u
+Total time (secs): 16
+Iterations/Sec   : 125
+Iterations       : 2000u
+Compiler version : GCC8.3.0
+Compiler flags   : -O3,-DITERATIONS=0, -mabi=ilp32, -march=rv32im
+Memory location  : STACK
+seedcrc          : 0xe9f5
+[0]crclist       : 0xe714
+[0]crcmatrix     : 0x1fd7
+[0]crcstate      : 0x8e3a
+[0]crcfinal      : 0x4983
+Correct operation validated. See README.md for run and reporting rules.
+```
 
-I faced some problems in running the coremark benchmark. Please note that the CRC of list, matrix, and state did not come out as expected. There is some problem during compilation when short integers are used. I changed the short type to integer of the CRC functions and it worked at-least for the seed CRC. I used the option -DCORE_DEBUG=1 to check the values of initialized list, matrices and states and they were correct. The benchmark result was also correct. Still figuring out the problem...
+
 ## Project
 
 ### Folder Structure
@@ -156,11 +217,11 @@ I faced some problems in running the coremark benchmark. Please note that the CR
  - [ ] Branch Prediction
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3OTUwNzY0MzcsLTExODAwOTkwNTIsMj
-A3NjY0MzI5MSwtODc2MTQ0ODEwLDc2MTQxMjMwMiwtOTIyNjgy
-MTAsLTE3MTMyMjM2NTgsLTEyNzk5MzIwNjAsMTY5Nzk4NTEyMC
-w4OTA3ODM3ODMsMTQzMjY1ODk0MCwxMDE2MDY3OTMxLDMzODUy
-NjIwNywtMTkzMDgyMTcwNywxMjYzMzI0NzA5LC00OTIxMTMwOT
-QsLTQ0MDA2Njc2NSw2MzA5NjgyNTcsMTAyNzIxMjk3MSwtMjAw
-NjYxMDAzMl19
+eyJoaXN0b3J5IjpbMjk4ODE0OTk4LC0xMTgwMDk5MDUyLDIwNz
+Y2NDMyOTEsLTg3NjE0NDgxMCw3NjE0MTIzMDIsLTkyMjY4MjEw
+LC0xNzEzMjIzNjU4LC0xMjc5OTMyMDYwLDE2OTc5ODUxMjAsOD
+kwNzgzNzgzLDE0MzI2NTg5NDAsMTAxNjA2NzkzMSwzMzg1MjYy
+MDcsLTE5MzA4MjE3MDcsMTI2MzMyNDcwOSwtNDkyMTEzMDk0LC
+00NDAwNjY3NjUsNjMwOTY4MjU3LDEwMjcyMTI5NzEsLTIwMDY2
+MTAwMzJdfQ==
 -->
