@@ -73,8 +73,9 @@ The coremark benchmark was compiled with compiler options:
  - -Os,-O3
  - -DITERATIONS=1000
  - -DPERFORMANCE_RUN=1
+ 
 
-I faced some problems in running the coremark benchmark. Please note that the CRC of list, matrix, and state did not come out as expected. There is some problem during compilation when short integers are used. I used the option -DCORE_DEBUG=1 to check the values of initialized list, matrices and states and they were correct. The benchmark result was also correct. Thr
+I faced some problems in running the coremark benchmark. Please note that the CRC of list, matrix, and state did not come out as expected. There is some problem during compilation when short integers are used. I changed the short type to integer of the CRC functions and it worked at-least for the seed CRC. I used the option -DCORE_DEBUG=1 to check the values of initialized list, matrices and states and they were correct. The benchmark result was also correct. Still figuring out the problem...
 ## Project
 
 ### Folder Structure
@@ -156,11 +157,11 @@ I faced some problems in running the coremark benchmark. Please note that the CR
  - [ ] Branch Prediction
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzMjk4NzIzNywyMDc2NjQzMjkxLC04Nz
-YxNDQ4MTAsNzYxNDEyMzAyLC05MjI2ODIxMCwtMTcxMzIyMzY1
-OCwtMTI3OTkzMjA2MCwxNjk3OTg1MTIwLDg5MDc4Mzc4MywxND
-MyNjU4OTQwLDEwMTYwNjc5MzEsMzM4NTI2MjA3LC0xOTMwODIx
-NzA3LDEyNjMzMjQ3MDksLTQ5MjExMzA5NCwtNDQwMDY2NzY1LD
-YzMDk2ODI1NywxMDI3MjEyOTcxLC0yMDA2NjEwMDMyLDMyODQ1
-ODc1Ml19
+eyJoaXN0b3J5IjpbNzM1MTE1MjEwLDIwNzY2NDMyOTEsLTg3Nj
+E0NDgxMCw3NjE0MTIzMDIsLTkyMjY4MjEwLC0xNzEzMjIzNjU4
+LC0xMjc5OTMyMDYwLDE2OTc5ODUxMjAsODkwNzgzNzgzLDE0Mz
+I2NTg5NDAsMTAxNjA2NzkzMSwzMzg1MjYyMDcsLTE5MzA4MjE3
+MDcsMTI2MzMyNDcwOSwtNDkyMTEzMDk0LC00NDAwNjY3NjUsNj
+MwOTY4MjU3LDEwMjcyMTI5NzEsLTIwMDY2MTAwMzIsMzI4NDU4
+NzUyXX0=
 -->
