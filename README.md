@@ -73,7 +73,8 @@ The coremark benchmark was compiled with compiler options:
  - -Os,-O3
  - -DITERATIONS=1000
  - -DPERFORMANCE_RUN=1
- 
+
+![enter image description here](https://raw.githubusercontent.com/ShaheerSajid/RISCV/master/images/coremark.png)
 
 I faced some problems in running the coremark benchmark. Please note that the CRC of list, matrix, and state did not come out as expected. There is some problem during compilation when short integers are used. I changed the short type to integer of the CRC functions and it worked at-least for the seed CRC. I used the option -DCORE_DEBUG=1 to check the values of initialized list, matrices and states and they were correct. The benchmark result was also correct. Still figuring out the problem...
 ## Project
@@ -157,11 +158,11 @@ I faced some problems in running the coremark benchmark. Please note that the CR
  - [ ] Branch Prediction
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzM1MTE1MjEwLDIwNzY2NDMyOTEsLTg3Nj
-E0NDgxMCw3NjE0MTIzMDIsLTkyMjY4MjEwLC0xNzEzMjIzNjU4
-LC0xMjc5OTMyMDYwLDE2OTc5ODUxMjAsODkwNzgzNzgzLDE0Mz
-I2NTg5NDAsMTAxNjA2NzkzMSwzMzg1MjYyMDcsLTE5MzA4MjE3
-MDcsMTI2MzMyNDcwOSwtNDkyMTEzMDk0LC00NDAwNjY3NjUsNj
-MwOTY4MjU3LDEwMjcyMTI5NzEsLTIwMDY2MTAwMzIsMzI4NDU4
-NzUyXX0=
+eyJoaXN0b3J5IjpbLTExODAwOTkwNTIsMjA3NjY0MzI5MSwtOD
+c2MTQ0ODEwLDc2MTQxMjMwMiwtOTIyNjgyMTAsLTE3MTMyMjM2
+NTgsLTEyNzk5MzIwNjAsMTY5Nzk4NTEyMCw4OTA3ODM3ODMsMT
+QzMjY1ODk0MCwxMDE2MDY3OTMxLDMzODUyNjIwNywtMTkzMDgy
+MTcwNywxMjYzMzI0NzA5LC00OTIxMTMwOTQsLTQ0MDA2Njc2NS
+w2MzA5NjgyNTcsMTAyNzIxMjk3MSwtMjAwNjYxMDAzMiwzMjg0
+NTg3NTJdfQ==
 -->
