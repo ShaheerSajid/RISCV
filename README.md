@@ -70,9 +70,7 @@ Cycles: 2282586
 ### Coremark
 The coremark benchmark was compiled with compiler options:
 
- - -Os,-O3
- - -DITERATIONS=1000
- - -DPERFORMANCE_RUN=1
+
 
 ![enter image description here](https://raw.githubusercontent.com/ShaheerSajid/RISCV/master/images/coremark.png)
 
@@ -158,11 +156,11 @@ I faced some problems in running the coremark benchmark. Please note that the CR
  - [ ] Branch Prediction
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExODAwOTkwNTIsMjA3NjY0MzI5MSwtOD
-c2MTQ0ODEwLDc2MTQxMjMwMiwtOTIyNjgyMTAsLTE3MTMyMjM2
-NTgsLTEyNzk5MzIwNjAsMTY5Nzk4NTEyMCw4OTA3ODM3ODMsMT
-QzMjY1ODk0MCwxMDE2MDY3OTMxLDMzODUyNjIwNywtMTkzMDgy
-MTcwNywxMjYzMzI0NzA5LC00OTIxMTMwOTQsLTQ0MDA2Njc2NS
-w2MzA5NjgyNTcsMTAyNzIxMjk3MSwtMjAwNjYxMDAzMiwzMjg0
-NTg3NTJdfQ==
+eyJoaXN0b3J5IjpbLTE3OTUwNzY0MzcsLTExODAwOTkwNTIsMj
+A3NjY0MzI5MSwtODc2MTQ0ODEwLDc2MTQxMjMwMiwtOTIyNjgy
+MTAsLTE3MTMyMjM2NTgsLTEyNzk5MzIwNjAsMTY5Nzk4NTEyMC
+w4OTA3ODM3ODMsMTQzMjY1ODk0MCwxMDE2MDY3OTMxLDMzODUy
+NjIwNywtMTkzMDgyMTcwNywxMjYzMzI0NzA5LC00OTIxMTMwOT
+QsLTQ0MDA2Njc2NSw2MzA5NjgyNTcsMTAyNzIxMjk3MSwtMjAw
+NjYxMDAzMl19
 -->
