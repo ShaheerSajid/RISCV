@@ -74,7 +74,7 @@ The coremark benchmark was compiled with compiler options:
  - -DITERATIONS=1000
  - -DPERFORMANCE_RUN=1
 
-I faced some problems in running the coremark benchmark. Please note that the CRC of list, matrix, and state did not come out as expected. There is some problem during compilation when short integers are used
+I faced some problems in running the coremark benchmark. Please note that the CRC of list, matrix, and state did not come out as expected. There is some problem during compilation when short integers are used. I used the option -DCORE_DEBUG=1 to check the values of initialized list, matrices and states and they were correct. The benchmark result was also correct. Thr
 ## Project
 
 ### Folder Structure
@@ -156,7 +156,7 @@ I faced some problems in running the coremark benchmark. Please note that the CR
  - [ ] Branch Prediction
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY4ODQzOTAxMCwyMDc2NjQzMjkxLC04Nz
+eyJoaXN0b3J5IjpbLTEzMjk4NzIzNywyMDc2NjQzMjkxLC04Nz
 YxNDQ4MTAsNzYxNDEyMzAyLC05MjI2ODIxMCwtMTcxMzIyMzY1
 OCwtMTI3OTkzMjA2MCwxNjk3OTg1MTIwLDg5MDc4Mzc4MywxND
 MyNjU4OTQwLDEwMTYwNjc5MzEsMzM4NTI2MjA3LC0xOTMwODIx
