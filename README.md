@@ -68,7 +68,7 @@ Cycles: 2282586
 ![enter image description here](https://raw.githubusercontent.com/ShaheerSajid/RISCV/master/images/dhry.png)
 
 ### Coremark
-
+I faced some problems in running the coremark benchmark. Please note that the CRC of list, matrix, and state 
 ## Project
 
 ### Folder Structure
@@ -150,11 +150,11 @@ Cycles: 2282586
  - [ ] Branch Prediction
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA3NjY0MzI5MSwtODc2MTQ0ODEwLDc2MT
-QxMjMwMiwtOTIyNjgyMTAsLTE3MTMyMjM2NTgsLTEyNzk5MzIw
-NjAsMTY5Nzk4NTEyMCw4OTA3ODM3ODMsMTQzMjY1ODk0MCwxMD
-E2MDY3OTMxLDMzODUyNjIwNywtMTkzMDgyMTcwNywxMjYzMzI0
-NzA5LC00OTIxMTMwOTQsLTQ0MDA2Njc2NSw2MzA5NjgyNTcsMT
-AyNzIxMjk3MSwtMjAwNjYxMDAzMiwzMjg0NTg3NTIsLTE3NTQz
-Njg1MjldfQ==
+eyJoaXN0b3J5IjpbLTIwNTEzODc2MSwyMDc2NjQzMjkxLC04Nz
+YxNDQ4MTAsNzYxNDEyMzAyLC05MjI2ODIxMCwtMTcxMzIyMzY1
+OCwtMTI3OTkzMjA2MCwxNjk3OTg1MTIwLDg5MDc4Mzc4MywxND
+MyNjU4OTQwLDEwMTYwNjc5MzEsMzM4NTI2MjA3LC0xOTMwODIx
+NzA3LDEyNjMzMjQ3MDksLTQ5MjExMzA5NCwtNDQwMDY2NzY1LD
+YzMDk2ODI1NywxMDI3MjEyOTcxLC0yMDA2NjEwMDMyLDMyODQ1
+ODc1Ml19
 -->
