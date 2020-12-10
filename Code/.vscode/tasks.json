@@ -1,0 +1,115 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "shell",
+			"label": "Compile",
+			"command": "/opt/riscv/bin/riscv32-unknown-elf-gcc",
+			"args": [
+				 "-o", 
+				 "${fileDirname}/${fileBasenameNoExtension}.elf",
+
+				 "${file}",
+				// "${fileDirname}/crt0.boot.S",
+				 
+				 "-O3",
+				  "-mabi=ilp32",
+				  "-march=rv32i",
+				  "-mstrict-align",
+				//  "-mno-fdiv",
+				//  "-mno-div",
+				  "-fdata-sections",
+				  "-ffunction-sections",
+				  "-funsigned-char",
+				  "-funsigned-bitfields",
+				  "-static",
+				//  "-ffreestanding",
+				//  "-Wl,--gc-sections",
+				  "-T",
+				  "${fileDirname}/link.ld",
+				  "--specs=nano.specs",
+				  "-nostartfiles",
+				  "-fno-builtin-printf"
+			]
+		},
+
+		{
+			"type": "shell",
+			"label": "Dump",
+			"command": "/opt/riscv/bin/riscv32-unknown-elf-objdump",
+			"args": [
+				"-D", 
+				"${fileDirname}/${fileBasenameNoExtension}.elf"
+			]
+		},
+
+		{
+			"type": "shell",
+			"label": "Bin",
+			"command": "/opt/riscv/bin/riscv32-unknown-elf-objcopy",
+			"args": [
+				"${fileDirname}/${fileBasenameNoExtension}.elf",
+				//"--change-addresses",
+				//"-0x80000",
+				"-O",
+				"binary",
+				"--gap-fill",
+				"0",
+				"${fileDirname}/flash/${fileBasenameNoExtension}.bin", 
+			]
+		},
+
+		{
+			"type": "shell",
+			"label": "Hex",
+			"command": "${fileDirname}/flash/bin2hex",
+			"args": [
+				"${fileDirname}/flash/${fileBasenameNoExtension}.bin",
+				"${fileDirname}/flash/flash.txt",
+				"${fileDirname}/flash/dram0.txt",
+				"${fileDirname}/flash/dram1.txt",
+				"${fileDirname}/flash/dram2.txt",
+				"${fileDirname}/flash/dram3.txt",
+				"2048",
+				
+				
+			]
+		},
+
+		{
+			"type": "shell",
+			"label": "Hex_uni",
+			"command": "${fileDirname}/flash/bin2hex_2",
+			"args": [
+				"${fileDirname}/flash/${fileBasenameNoExtension}.bin",
+				"${fileDirname}/flash/${fileBasenameNoExtension}.hex",
+			]
+		},
+
+		{
+			"type": "shell",
+			"label": "Copy",
+			"command": "cp",
+			"args": [
+				"flash/flash.txt",
+				"flash/dram0.txt",
+				"flash/dram1.txt",
+				"flash/dram2.txt",
+				"flash/dram3.txt",
+				"../RISCV_CORE/system/synthesis/submodules",
+				
+				
+			]
+		},
+
+		{
+			"label": "build",
+			"dependsOrder": "sequence",
+			"dependsOn": ["Compile","Bin","Hex_uni"],
+			"group": {
+				"kind": "build",
+				"isDefault": true
+			}
+		}
+	]
+}
