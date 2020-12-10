@@ -1,5 +1,0 @@
-PLL_Name	pll_8m:pll_8m_inst|altpll:altpll_component|pll_8m_altpll:auto_generated|pll1
-PLLJITTER	30
-PLLSPEmax	84
-PLLSPEmin	-53
-
