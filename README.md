@@ -86,7 +86,7 @@ seedcrc          : 0xe9f5
 Correct operation validated. See README.md for run and reporting rules.
 ```
 ![enter image description here](https://raw.githubusercontent.com/ShaheerSajid/RISCV/master/images/coremark.png)
-*I
+*rv32im is without hard division
 ## Project
 
 ### Folder Structure
@@ -168,11 +168,11 @@ Correct operation validated. See README.md for run and reporting rules.
  - [ ] Branch Prediction
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ1OTQyMDAyNSwyOTg4MTQ5OTgsLTExOD
-AwOTkwNTIsMjA3NjY0MzI5MSwtODc2MTQ0ODEwLDc2MTQxMjMw
-MiwtOTIyNjgyMTAsLTE3MTMyMjM2NTgsLTEyNzk5MzIwNjAsMT
-Y5Nzk4NTEyMCw4OTA3ODM3ODMsMTQzMjY1ODk0MCwxMDE2MDY3
-OTMxLDMzODUyNjIwNywtMTkzMDgyMTcwNywxMjYzMzI0NzA5LC
-00OTIxMTMwOTQsLTQ0MDA2Njc2NSw2MzA5NjgyNTcsMTAyNzIx
-Mjk3MV19
+eyJoaXN0b3J5IjpbLTIwNTI1ODI2OTksMjk4ODE0OTk4LC0xMT
+gwMDk5MDUyLDIwNzY2NDMyOTEsLTg3NjE0NDgxMCw3NjE0MTIz
+MDIsLTkyMjY4MjEwLC0xNzEzMjIzNjU4LC0xMjc5OTMyMDYwLD
+E2OTc5ODUxMjAsODkwNzgzNzgzLDE0MzI2NTg5NDAsMTAxNjA2
+NzkzMSwzMzg1MjYyMDcsLTE5MzA4MjE3MDcsMTI2MzMyNDcwOS
+wtNDkyMTEzMDk0LC00NDAwNjY3NjUsNjMwOTY4MjU3LDEwMjcy
+MTI5NzFdfQ==
 -->
