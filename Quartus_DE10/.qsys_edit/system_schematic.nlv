@@ -1,0 +1,23 @@
+# # File gsaved with Nlview version 6.3.8  2013-12-19 bk=1.2992 VDI=34 GEI=35
+# 
+preplace inst system.timer_0 -pg 1 -lvl 3 -y 310
+preplace inst system.onchip_memory2_0 -pg 1 -lvl 3 -y 170
+preplace inst system.uart_0 -pg 1 -lvl 3 -y 390
+preplace inst system.gpio_0 -pg 1 -lvl 3 -y 70
+preplace inst system -pg 1 -lvl 1 -y 40 -regy -20
+preplace inst system.clock_bridge_0 -pg 1 -lvl 2 -y 410
+preplace inst system.clk_0 -pg 1 -lvl 1 -y 130
+preplace inst system.NU_CORE -pg 1 -lvl 2 -y 30
+preplace netloc EXPORT<net_container>system</net_container>(SLAVE)NU_CORE.conduit_end,(SLAVE)system.flash_1) 1 0 2 NJ 60 NJ
+preplace netloc EXPORT<net_container>system</net_container>(SLAVE)system.clk,(SLAVE)clk_0.clk_in) 1 0 1 NJ
+preplace netloc FAN_OUT<net_container>system</net_container>(MASTER)clk_0.clk,(SLAVE)gpio_0.clock,(SLAVE)onchip_memory2_0.clk1,(SLAVE)timer_0.clock,(SLAVE)onchip_memory2_0.clk2,(SLAVE)NU_CORE.clock) 1 1 2 270 140 520
+preplace netloc EXPORT<net_container>system</net_container>(SLAVE)gpio_0.gpio_port,(SLAVE)system.gpio) 1 0 3 NJ 120 NJ 120 NJ
+preplace netloc EXPORT<net_container>system</net_container>(SLAVE)clock_bridge_0.in_clk,(SLAVE)system.uart_clk) 1 0 2 NJ 420 NJ
+preplace netloc POINT_TO_POINT<net_container>system</net_container>(MASTER)clock_bridge_0.out_clk,(SLAVE)uart_0.clock) 1 2 1 NJ
+preplace netloc FAN_OUT<net_container>system</net_container>(SLAVE)gpio_0.avalon_slave_0,(MASTER)NU_CORE.Data_Master,(SLAVE)onchip_memory2_0.s1,(SLAVE)timer_0.avalon_slave_0,(SLAVE)uart_0.avalon_slave_0) 1 2 1 500
+preplace netloc EXPORT<net_container>system</net_container>(SLAVE)clk_0.clk_in_reset,(SLAVE)system.reset) 1 0 1 NJ
+preplace netloc FAN_OUT<net_container>system</net_container>(MASTER)clk_0.clk_reset,(SLAVE)gpio_0.reset,(SLAVE)onchip_memory2_0.reset1,(SLAVE)uart_0.reset,(SLAVE)timer_0.reset,(SLAVE)onchip_memory2_0.reset2,(SLAVE)NU_CORE.reset) 1 1 2 290 160 540
+preplace netloc EXPORT<net_container>system</net_container>(SLAVE)uart_0.rx_tx,(SLAVE)system.uart) 1 0 3 NJ 460 NJ 460 NJ
+preplace netloc EXPORT<net_container>system</net_container>(SLAVE)system.flash,(SLAVE)onchip_memory2_0.s2) 1 0 3 NJ 280 NJ 280 NJ
+levelinfo -pg 1 0 60 720
+levelinfo -hier system 70 100 320 590 710

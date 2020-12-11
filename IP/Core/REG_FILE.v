@@ -11,10 +11,10 @@ module REG_FILE
 
    reg [31:0] 	 regfile [0:31] ;
 	
-	initial
+	/*initial
 	begin
 		$readmemh("/home/shaheer/Desktop/Projects/RISC/Demo/DE10/RISCV_CORE/regfile.txt", regfile,0,31);
-	end
+	end*/
 	
    assign rdDataA = regfile[rdAddrA];
    assign rdDataB = regfile[rdAddrB];

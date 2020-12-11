@@ -34,18 +34,40 @@ endgenerate
 generate
 if(M_Extension_DIV && M_Extension)
 	begin
-		div_rem	div_rem_inst (
-			.denom ( A ),
-			.numer ( B ),
-			.quotient ( div_out ),
-			.remain ( rem_out )
-			);
-		divu_remu	divu_remu_inst (
-			.denom ( A ),
-			.numer ( B ),
-			.quotient ( divu_out ),
-			.remain ( remu_out )
-			);
+	
+		lpm_divide	LPM_DIVIDE_component (
+				.denom (B),
+				.numer (A),
+				.quotient (div_out),
+				.remain (rem_out),
+				.aclr (1'b0),
+				.clken (1'b1),
+				.clock (1'b0));
+	defparam
+		LPM_DIVIDE_component.lpm_drepresentation = "SIGNED",
+		LPM_DIVIDE_component.lpm_hint = "LPM_REMAINDERPOSITIVE=TRUE",
+		LPM_DIVIDE_component.lpm_nrepresentation = "SIGNED",
+		LPM_DIVIDE_component.lpm_type = "LPM_DIVIDE",
+		LPM_DIVIDE_component.lpm_widthd = 32,
+		LPM_DIVIDE_component.lpm_widthn = 32;
+		
+		
+		lpm_divide	LPM_DIVIDEU_component (
+				.denom (B),
+				.numer (A),
+				.quotient (divu_out),
+				.remain (remu_out),
+				.aclr (1'b0),
+				.clken (1'b1),
+				.clock (1'b0));
+	defparam
+		LPM_DIVIDEU_component.lpm_drepresentation = "UNSIGNED",
+		LPM_DIVIDEU_component.lpm_hint = "LPM_REMAINDERPOSITIVE=TRUE",
+		LPM_DIVIDEU_component.lpm_nrepresentation = "UNSIGNED",
+		LPM_DIVIDEU_component.lpm_type = "LPM_DIVIDE",
+		LPM_DIVIDEU_component.lpm_widthd = 32,
+		LPM_DIVIDEU_component.lpm_widthn = 32;
+		
 	end
 else
 	begin
