@@ -23,8 +23,30 @@ Interrupts are not supported at the moment.
 
 ## Benchmarks and Tests
 
-Each instruction was validated using modelsim after which simple C programs were compiled to validate overall functionality. Dhrystone v2.1 benchmark was then performed to provide an idea on the overall performance of the processor. 
-These tests was performed on integer only core.
+### CoreMark
+```
+2K performance run parameters for coremark.
+CoreMark Size    : 666u
+Total ticks      : 1550779828u
+Total time (secs): 31
+Iterations/Sec   : 129
+Iterations       : 4000u
+Compiler version : GCC8.3.0
+Compiler flags   : -O2,-DITERATIONS=4000, -mabi=ilp32, -march=rv32im (See Makefile)
+Memory location  : STACK
+seedcrc          : 0xe9f5
+[0]crclist       : 0xe714
+[0]crcmatrix     : 0x1fd7
+[0]crcstate      : 0x8e3a
+[0]crcfinal      : 0x65c5
+Correct operation validated. See README.md for run and reporting rules.
+```
+**Coremark/mhz = 2.58**
+
+![enter image description here](https://raw.githubusercontent.com/ShaheerSajid/RISCV/master/images/coremark.png)
+
+*rv32im is without hard division
+
 
 ### Calculation of 100 PI digits:
 
@@ -67,29 +89,7 @@ Cycles: 2282586
 
 ![enter image description here](https://raw.githubusercontent.com/ShaheerSajid/RISCV/master/images/dhry.png)
 
-### Coremark
-```
-2K performance run parameters for coremark.
-CoreMark Size    : 666u
-Total ticks      : 1550779828u
-Total time (secs): 31
-Iterations/Sec   : 129
-Iterations       : 4000u
-Compiler version : GCC8.3.0
-Compiler flags   : -O2,-DITERATIONS=4000, -mabi=ilp32, -march=rv32im (See Makefile)
-Memory location  : STACK
-seedcrc          : 0xe9f5
-[0]crclist       : 0xe714
-[0]crcmatrix     : 0x1fd7
-[0]crcstate      : 0x8e3a
-[0]crcfinal      : 0x65c5
-Correct operation validated. See README.md for run and reporting rules.
-```
-**Coremark/mhz = 2.58**
 
-![enter image description here](https://raw.githubusercontent.com/ShaheerSajid/RISCV/master/images/coremark.png)
-
-*rv32im is without hard division
 
 ## Project
 
@@ -172,11 +172,11 @@ Correct operation validated. See README.md for run and reporting rules.
  - [ ] Branch Prediction
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTgwMjM5ODM3MSwxMjI0Nzg5MzYxLC0yMD
-UyNTgyNjk5LDI5ODgxNDk5OCwtMTE4MDA5OTA1MiwyMDc2NjQz
-MjkxLC04NzYxNDQ4MTAsNzYxNDEyMzAyLC05MjI2ODIxMCwtMT
-cxMzIyMzY1OCwtMTI3OTkzMjA2MCwxNjk3OTg1MTIwLDg5MDc4
-Mzc4MywxNDMyNjU4OTQwLDEwMTYwNjc5MzEsMzM4NTI2MjA3LC
-0xOTMwODIxNzA3LDEyNjMzMjQ3MDksLTQ5MjExMzA5NCwtNDQw
-MDY2NzY1XX0=
+eyJoaXN0b3J5IjpbMTQwNzY4MDYxMSwtODAyMzk4MzcxLDEyMj
+Q3ODkzNjEsLTIwNTI1ODI2OTksMjk4ODE0OTk4LC0xMTgwMDk5
+MDUyLDIwNzY2NDMyOTEsLTg3NjE0NDgxMCw3NjE0MTIzMDIsLT
+kyMjY4MjEwLC0xNzEzMjIzNjU4LC0xMjc5OTMyMDYwLDE2OTc5
+ODUxMjAsODkwNzgzNzgzLDE0MzI2NTg5NDAsMTAxNjA2NzkzMS
+wzMzg1MjYyMDcsLTE5MzA4MjE3MDcsMTI2MzMyNDcwOSwtNDky
+MTEzMDk0XX0=
 -->
