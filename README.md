@@ -85,8 +85,10 @@ seedcrc          : 0xe9f5
 [0]crcfinal      : 0x65c5
 Correct operation validated. See README.md for run and reporting rules.
 ```
+
+
 ![enter image description here](https://raw.githubusercontent.com/ShaheerSajid/RISCV/master/images/coremark.png)
-**Update**: Corem
+
 *rv32im is without hard division
 
 ## Project
@@ -170,7 +172,7 @@ Correct operation validated. See README.md for run and reporting rules.
  - [ ] Branch Prediction
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTQzNzE0Nzc2LDEyMjQ3ODkzNjEsLTIwNT
+eyJoaXN0b3J5IjpbMjk2MTQzNDM1LDEyMjQ3ODkzNjEsLTIwNT
 I1ODI2OTksMjk4ODE0OTk4LC0xMTgwMDk5MDUyLDIwNzY2NDMy
 OTEsLTg3NjE0NDgxMCw3NjE0MTIzMDIsLTkyMjY4MjEwLC0xNz
 EzMjIzNjU4LC0xMjc5OTMyMDYwLDE2OTc5ODUxMjAsODkwNzgz
