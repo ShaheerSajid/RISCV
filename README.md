@@ -85,7 +85,7 @@ seedcrc          : 0xe9f5
 [0]crcfinal      : 0x65c5
 Correct operation validated. See README.md for run and reporting rules.
 ```
-
+**Coremark/mhz = 2.58**
 
 ![enter image description here](https://raw.githubusercontent.com/ShaheerSajid/RISCV/master/images/coremark.png)
 
@@ -172,11 +172,11 @@ Correct operation validated. See README.md for run and reporting rules.
  - [ ] Branch Prediction
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjk2MTQzNDM1LDEyMjQ3ODkzNjEsLTIwNT
-I1ODI2OTksMjk4ODE0OTk4LC0xMTgwMDk5MDUyLDIwNzY2NDMy
-OTEsLTg3NjE0NDgxMCw3NjE0MTIzMDIsLTkyMjY4MjEwLC0xNz
-EzMjIzNjU4LC0xMjc5OTMyMDYwLDE2OTc5ODUxMjAsODkwNzgz
-NzgzLDE0MzI2NTg5NDAsMTAxNjA2NzkzMSwzMzg1MjYyMDcsLT
-E5MzA4MjE3MDcsMTI2MzMyNDcwOSwtNDkyMTEzMDk0LC00NDAw
-NjY3NjVdfQ==
+eyJoaXN0b3J5IjpbLTgwMjM5ODM3MSwxMjI0Nzg5MzYxLC0yMD
+UyNTgyNjk5LDI5ODgxNDk5OCwtMTE4MDA5OTA1MiwyMDc2NjQz
+MjkxLC04NzYxNDQ4MTAsNzYxNDEyMzAyLC05MjI2ODIxMCwtMT
+cxMzIyMzY1OCwtMTI3OTkzMjA2MCwxNjk3OTg1MTIwLDg5MDc4
+Mzc4MywxNDMyNjU4OTQwLDEwMTYwNjc5MzEsMzM4NTI2MjA3LC
+0xOTMwODIxNzA3LDEyNjMzMjQ3MDksLTQ5MjExMzA5NCwtNDQw
+MDY2NzY1XX0=
 -->
