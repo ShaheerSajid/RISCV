@@ -71,22 +71,22 @@ Cycles: 2282586
 ```
 2K performance run parameters for coremark.
 CoreMark Size    : 666u
-Total ticks      : 844810491u
-Total time (secs): 16
-Iterations/Sec   : 125
-Iterations       : 2000u
+Total ticks      : 1550779828u
+Total time (secs): 31
+Iterations/Sec   : 129
+Iterations       : 4000u
 Compiler version : GCC8.3.0
-Compiler flags   : -O3,-DITERATIONS=0, -mabi=ilp32, -march=rv32im
+Compiler flags   : -O2,-DITERATIONS=4000, -mabi=ilp32, -march=rv32im (See Makefile)
 Memory location  : STACK
 seedcrc          : 0xe9f5
 [0]crclist       : 0xe714
 [0]crcmatrix     : 0x1fd7
 [0]crcstate      : 0x8e3a
-[0]crcfinal      : 0x4983
+[0]crcfinal      : 0x65c5
 Correct operation validated. See README.md for run and reporting rules.
 ```
 ![enter image description here](https://raw.githubusercontent.com/ShaheerSajid/RISCV/master/images/coremark.png)
-
+**Update**: Corem
 *rv32im is without hard division
 
 ## Project
@@ -170,11 +170,11 @@ Correct operation validated. See README.md for run and reporting rules.
  - [ ] Branch Prediction
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTIyNDc4OTM2MSwtMjA1MjU4MjY5OSwyOT
-g4MTQ5OTgsLTExODAwOTkwNTIsMjA3NjY0MzI5MSwtODc2MTQ0
-ODEwLDc2MTQxMjMwMiwtOTIyNjgyMTAsLTE3MTMyMjM2NTgsLT
-EyNzk5MzIwNjAsMTY5Nzk4NTEyMCw4OTA3ODM3ODMsMTQzMjY1
-ODk0MCwxMDE2MDY3OTMxLDMzODUyNjIwNywtMTkzMDgyMTcwNy
-wxMjYzMzI0NzA5LC00OTIxMTMwOTQsLTQ0MDA2Njc2NSw2MzA5
-NjgyNTddfQ==
+eyJoaXN0b3J5IjpbNTQzNzE0Nzc2LDEyMjQ3ODkzNjEsLTIwNT
+I1ODI2OTksMjk4ODE0OTk4LC0xMTgwMDk5MDUyLDIwNzY2NDMy
+OTEsLTg3NjE0NDgxMCw3NjE0MTIzMDIsLTkyMjY4MjEwLC0xNz
+EzMjIzNjU4LC0xMjc5OTMyMDYwLDE2OTc5ODUxMjAsODkwNzgz
+NzgzLDE0MzI2NTg5NDAsMTAxNjA2NzkzMSwzMzg1MjYyMDcsLT
+E5MzA4MjE3MDcsMTI2MzMyNDcwOSwtNDkyMTEzMDk0LC00NDAw
+NjY3NjVdfQ==
 -->
