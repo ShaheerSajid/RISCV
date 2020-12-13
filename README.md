@@ -48,7 +48,6 @@ Correct operation validated. See README.md for run and reporting rules.
 
 
 ### Calculation of 100 PI digits:
-
 ```
 #define  SCALE  10000
 #define  ARRINIT  2000
@@ -171,7 +170,7 @@ Cycles: 2282586
  - [ ] Branch Prediction
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQzOTUyMzgyMywxNDA3NjgwNjExLC04MD
+eyJoaXN0b3J5IjpbLTIwNjAxMDMzMywxNDA3NjgwNjExLC04MD
 IzOTgzNzEsMTIyNDc4OTM2MSwtMjA1MjU4MjY5OSwyOTg4MTQ5
 OTgsLTExODAwOTkwNTIsMjA3NjY0MzI5MSwtODc2MTQ0ODEwLD
 c2MTQxMjMwMiwtOTIyNjgyMTAsLTE3MTMyMjM2NTgsLTEyNzk5
