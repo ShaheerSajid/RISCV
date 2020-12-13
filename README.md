@@ -44,6 +44,7 @@ Correct operation validated. See README.md for run and reporting rules.
 **Coremark/mhz = 2.58**
 
 ![enter image description here](https://raw.githubusercontent.com/ShaheerSajid/RISCV/master/images/coremark.png)
+
 *rv32im is without hard division
 
 
@@ -170,7 +171,7 @@ Cycles: 2282586
  - [ ] Branch Prediction
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwNjAxMDMzMywxNDA3NjgwNjExLC04MD
+eyJoaXN0b3J5IjpbLTQwNTIwNTI1OSwxNDA3NjgwNjExLC04MD
 IzOTgzNzEsMTIyNDc4OTM2MSwtMjA1MjU4MjY5OSwyOTg4MTQ5
 OTgsLTExODAwOTkwNTIsMjA3NjY0MzI5MSwtODc2MTQ0ODEwLD
 c2MTQxMjMwMiwtOTIyNjgyMTAsLTE3MTMyMjM2NTgsLTEyNzk5
