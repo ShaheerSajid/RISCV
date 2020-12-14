@@ -52,11 +52,11 @@ module core2avl
 
 	always@(*)
 	begin
-		if(mode == 3'b000 || mode == 3'b100)
+		if(!mode[0] & !mode[1])
 			be = 1<<byt;
-		else if(mode == 3'b001 || mode == 3'b101)
+		else if(mode[0] & !mode[1])
 			be = 2'b11 << byt;
-		else if(mode == 3'b010)
+		else if(mode[1] & !mode[0])
 			be = 4'b1111;
 		else
 			be = 0;

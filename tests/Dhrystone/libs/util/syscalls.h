@@ -57,6 +57,26 @@
 #define PRINT_H_
 
 #include <stdarg.h>
+/**
+ * This file contains implementation of the newlib
+ * syscalls. syscalls are special functions that are
+ * platform dependant. The entire library is based on
+ * these basic functions. Newlib provides the C and C++ 
+ * standard library functions with the GNU RISC-V toolchain
+ */
+
+#include <sys/stat.h>
+#include <sys/types.h>
+#include <sys/fcntl.h>
+#include <sys/times.h>
+#include <sys/errno.h>
+#include <sys/time.h>
+#include <stdio.h>
+#include <errno.h>
+#undef errno
+
+
+
 
 #define putchar(c) serial_putc(c)
 

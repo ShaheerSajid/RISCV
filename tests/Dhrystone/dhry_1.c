@@ -16,17 +16,16 @@
  */
 
 #include "dhry.h"
-#include <string.h>
 #include "libs/util/delay.h"
 #include "libs/sys/serial/serial.h"
 #include "libs/sys/gpio/gpio.h"
 #include "libs/sys/timer/timer.h"
 #include "libs/util/syscalls.h"
-//#include <stdio.h>
+
 
 
 #ifndef DHRY_ITERS
-#define DHRY_ITERS 1000
+#define DHRY_ITERS 10000
 #endif
 
 /* Global Variables: */

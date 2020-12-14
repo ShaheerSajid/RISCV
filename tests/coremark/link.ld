@@ -8,7 +8,7 @@ OUTPUT_FORMAT("elf32-littleriscv", "elf32-littleriscv",
 OUTPUT_ARCH(riscv)
 MEMORY
 {
-  RAM (rwx)  : ORIGIN = 0x0, LENGTH = 0x6000 
+  RAM (rwx)  : ORIGIN = 0x0, LENGTH = 0x8000 
 }
 ENTRY(_reset)
 SEARCH_DIR("/opt/riscv64/riscv64-unknown-elf/lib");
