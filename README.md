@@ -89,22 +89,10 @@ Cycles: 2282586
 ![enter image description here](https://raw.githubusercontent.com/ShaheerSajid/RISCV/master/images/dhry.png)
 
 I used the compiler settings of SiFive for dhrystone test and I got a score of 1.45 DMIPS/MHz. I must say that dhrystone test is more of a compiler benchmark.
-```
-"-O3",
-"-mabi=ilp32",
-"-march=rv32im",
-			"-mno-div",
-				"-finline-functions",
-				"-static",
-				"-DTIME",
-				"-DNOENUM",
-				"-Wno-implicit",
-				"-save-temps",
-				"-fno-builtin-printf",
-				"-fno-common",
-				"-falign-functions=4",
-				"-fno-builtin-printf",
-```
+
+-O3 -mabi=ilp32 -march=rv32im -mno-div -finline-functions -static -DTIME -DNOENUM -Wno-implicit -save-temps -fno-builtin-printf -fno-common -falign-functions=4 -fno-builtin-printf 
+Mcycles = 3930048
+
 
 
 ## Project
@@ -188,7 +176,7 @@ I used the compiler settings of SiFive for dhrystone test and I got a score of 1
  - [ ] Branch Prediction
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk3NzU1NTA2MSwtNDA1MjA1MjU5LDE0MD
+eyJoaXN0b3J5IjpbMTA4MDk4OTUxMywtNDA1MjA1MjU5LDE0MD
 c2ODA2MTEsLTgwMjM5ODM3MSwxMjI0Nzg5MzYxLC0yMDUyNTgy
 Njk5LDI5ODgxNDk5OCwtMTE4MDA5OTA1MiwyMDc2NjQzMjkxLC
 04NzYxNDQ4MTAsNzYxNDEyMzAyLC05MjI2ODIxMCwtMTcxMzIy
