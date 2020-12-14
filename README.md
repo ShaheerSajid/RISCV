@@ -105,9 +105,10 @@ DMIPS/MHz = 1.448
 +-- _images
 +-- _DE10 Lite
 |	+--RISCV_CORE (Quartus Prime lite 18.1 project)
-+-- _Code (vscode workspace)
++-- _Code
 +-- _tests 
-|	+--Dhrystone (vscode workspace)
+|	+--Dhrystone
+|	+--Coremark
 +-- _IPs (Platform Designer)
 |	+--Core
 |	+--gpio
@@ -178,11 +179,11 @@ DMIPS/MHz = 1.448
  - [ ] Branch Prediction
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5MzgwMTkyMDksLTk3MjExMTI0NSwtMT
-AyMzY1ODgyMSwtNDA1MjA1MjU5LDE0MDc2ODA2MTEsLTgwMjM5
-ODM3MSwxMjI0Nzg5MzYxLC0yMDUyNTgyNjk5LDI5ODgxNDk5OC
-wtMTE4MDA5OTA1MiwyMDc2NjQzMjkxLC04NzYxNDQ4MTAsNzYx
-NDEyMzAyLC05MjI2ODIxMCwtMTcxMzIyMzY1OCwtMTI3OTkzMj
-A2MCwxNjk3OTg1MTIwLDg5MDc4Mzc4MywxNDMyNjU4OTQwLDEw
-MTYwNjc5MzFdfQ==
+eyJoaXN0b3J5IjpbMTQ1MjI5MDcwMiwtMTkzODAxOTIwOSwtOT
+cyMTExMjQ1LC0xMDIzNjU4ODIxLC00MDUyMDUyNTksMTQwNzY4
+MDYxMSwtODAyMzk4MzcxLDEyMjQ3ODkzNjEsLTIwNTI1ODI2OT
+ksMjk4ODE0OTk4LC0xMTgwMDk5MDUyLDIwNzY2NDMyOTEsLTg3
+NjE0NDgxMCw3NjE0MTIzMDIsLTkyMjY4MjEwLC0xNzEzMjIzNj
+U4LC0xMjc5OTMyMDYwLDE2OTc5ODUxMjAsODkwNzgzNzgzLDE0
+MzI2NTg5NDBdfQ==
 -->
