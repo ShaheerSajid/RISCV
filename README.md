@@ -88,6 +88,7 @@ Cycles: 2282586
 
 ![enter image description here](https://raw.githubusercontent.com/ShaheerSajid/RISCV/master/images/dhry.png)
 
+I used the compiler settings of SiFive for dhrystone test and I got a score of 1.45 DMIPS/MHz. I must say that dhrystone test is more of a compiler benchmark hence a huge var
 
 
 ## Project
@@ -171,11 +172,11 @@ Cycles: 2282586
  - [ ] Branch Prediction
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQwNTIwNTI1OSwxNDA3NjgwNjExLC04MD
-IzOTgzNzEsMTIyNDc4OTM2MSwtMjA1MjU4MjY5OSwyOTg4MTQ5
-OTgsLTExODAwOTkwNTIsMjA3NjY0MzI5MSwtODc2MTQ0ODEwLD
-c2MTQxMjMwMiwtOTIyNjgyMTAsLTE3MTMyMjM2NTgsLTEyNzk5
-MzIwNjAsMTY5Nzk4NTEyMCw4OTA3ODM3ODMsMTQzMjY1ODk0MC
-wxMDE2MDY3OTMxLDMzODUyNjIwNywtMTkzMDgyMTcwNywxMjYz
-MzI0NzA5XX0=
+eyJoaXN0b3J5IjpbLTE1OTI5MzI0MDAsLTQwNTIwNTI1OSwxND
+A3NjgwNjExLC04MDIzOTgzNzEsMTIyNDc4OTM2MSwtMjA1MjU4
+MjY5OSwyOTg4MTQ5OTgsLTExODAwOTkwNTIsMjA3NjY0MzI5MS
+wtODc2MTQ0ODEwLDc2MTQxMjMwMiwtOTIyNjgyMTAsLTE3MTMy
+MjM2NTgsLTEyNzk5MzIwNjAsMTY5Nzk4NTEyMCw4OTA3ODM3OD
+MsMTQzMjY1ODk0MCwxMDE2MDY3OTMxLDMzODUyNjIwNywtMTkz
+MDgyMTcwN119
 -->
