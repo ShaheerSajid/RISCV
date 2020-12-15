@@ -131,9 +131,10 @@ DMIPS/MHz = 1.448
 ## Programming
 
  1. Download the tool chain from here: https://static.dev.sifive.com/dev-tools/riscv64-unknown-elf-gcc-8.3.0-2020.04.0-x86_64-linux-ubuntu14.tar.gz
- 2. Add your code to main.c.
- 3. Click terminal/run build task.
- 4. The file main.hex will be generated inside the flash folder.
+ 2. Extract the compiler and note the path. (opt/riscv/bin/  etc)
+ 3. Edit makefile and set the path of the compiler
+ 4. Click terminal/run build task.
+ 5. The file main.hex will be generated inside the flash folder.
  
  ### Libraries
 	**GPIO:**
@@ -177,11 +178,11 @@ DMIPS/MHz = 1.448
  - [ ] Branch Prediction
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM3NTc3OTEzNiwxNDUyMjkwNzAyLC0xOT
-M4MDE5MjA5LC05NzIxMTEyNDUsLTEwMjM2NTg4MjEsLTQwNTIw
-NTI1OSwxNDA3NjgwNjExLC04MDIzOTgzNzEsMTIyNDc4OTM2MS
-wtMjA1MjU4MjY5OSwyOTg4MTQ5OTgsLTExODAwOTkwNTIsMjA3
-NjY0MzI5MSwtODc2MTQ0ODEwLDc2MTQxMjMwMiwtOTIyNjgyMT
-AsLTE3MTMyMjM2NTgsLTEyNzk5MzIwNjAsMTY5Nzk4NTEyMCw4
-OTA3ODM3ODNdfQ==
+eyJoaXN0b3J5IjpbNDA5OTY0OCwxNDUyMjkwNzAyLC0xOTM4MD
+E5MjA5LC05NzIxMTEyNDUsLTEwMjM2NTg4MjEsLTQwNTIwNTI1
+OSwxNDA3NjgwNjExLC04MDIzOTgzNzEsMTIyNDc4OTM2MSwtMj
+A1MjU4MjY5OSwyOTg4MTQ5OTgsLTExODAwOTkwNTIsMjA3NjY0
+MzI5MSwtODc2MTQ0ODEwLDc2MTQxMjMwMiwtOTIyNjgyMTAsLT
+E3MTMyMjM2NTgsLTEyNzk5MzIwNjAsMTY5Nzk4NTEyMCw4OTA3
+ODM3ODNdfQ==
 -->
