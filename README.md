@@ -132,9 +132,9 @@ DMIPS/MHz = 1.448
 
  1. Download the tool chain from here: https://static.dev.sifive.com/dev-tools/riscv64-unknown-elf-gcc-8.3.0-2020.04.0-x86_64-linux-ubuntu14.tar.gz
  2. Extract the compiler and note the path. (opt/riscv/bin/  etc)
- 3. Edit makefile and set the path of the compiler
- 4. Click terminal/run build task.
- 5. The file main.hex will be generated inside the flash folder.
+ 3. Edit makefile and set the path of the compiler.
+ 4. Add your code to main.c and run make.
+ 6. The hex file will be generated inside the folder mem_init. Give the path of this file when editing system-on-chip ram IP.
  
  ### Libraries
 	**GPIO:**
@@ -178,11 +178,11 @@ DMIPS/MHz = 1.448
  - [ ] Branch Prediction
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDA5OTY0OCwxNDUyMjkwNzAyLC0xOTM4MD
-E5MjA5LC05NzIxMTEyNDUsLTEwMjM2NTg4MjEsLTQwNTIwNTI1
-OSwxNDA3NjgwNjExLC04MDIzOTgzNzEsMTIyNDc4OTM2MSwtMj
-A1MjU4MjY5OSwyOTg4MTQ5OTgsLTExODAwOTkwNTIsMjA3NjY0
-MzI5MSwtODc2MTQ0ODEwLDc2MTQxMjMwMiwtOTIyNjgyMTAsLT
-E3MTMyMjM2NTgsLTEyNzk5MzIwNjAsMTY5Nzk4NTEyMCw4OTA3
-ODM3ODNdfQ==
+eyJoaXN0b3J5IjpbNDAwODAyODk0LDE0NTIyOTA3MDIsLTE5Mz
+gwMTkyMDksLTk3MjExMTI0NSwtMTAyMzY1ODgyMSwtNDA1MjA1
+MjU5LDE0MDc2ODA2MTEsLTgwMjM5ODM3MSwxMjI0Nzg5MzYxLC
+0yMDUyNTgyNjk5LDI5ODgxNDk5OCwtMTE4MDA5OTA1MiwyMDc2
+NjQzMjkxLC04NzYxNDQ4MTAsNzYxNDEyMzAyLC05MjI2ODIxMC
+wtMTcxMzIyMzY1OCwtMTI3OTkzMjA2MCwxNjk3OTg1MTIwLDg5
+MDc4Mzc4M119
 -->
