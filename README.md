@@ -130,12 +130,10 @@ DMIPS/MHz = 1.448
 
 ## Programming
 
- 1. Download the toolchain from here: 
- 2. Download visual studio code and open the DE10 workspace in Code folder.
- 3. Open link.riscv.ld and give absolute path of the file link.common.ld in the include section.
- 4. Add your code to main.c.
- 5. Click terminal/run build task.
- 6. The file main.hex will be generated inside the flash folder.
+ 1. Download the tool chain from here: https://static.dev.sifive.com/dev-tools/riscv64-unknown-elf-gcc-8.3.0-2020.04.0-x86_64-linux-ubuntu14.tar.gz
+ 2. Add your code to main.c.
+ 3. Click terminal/run build task.
+ 4. The file main.hex will be generated inside the flash folder.
  
  ### Libraries
 	**GPIO:**
@@ -179,7 +177,7 @@ DMIPS/MHz = 1.448
  - [ ] Branch Prediction
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA2ODQ2NTE5OSwxNDUyMjkwNzAyLC0xOT
+eyJoaXN0b3J5IjpbMTM3NTc3OTEzNiwxNDUyMjkwNzAyLC0xOT
 M4MDE5MjA5LC05NzIxMTEyNDUsLTEwMjM2NTg4MjEsLTQwNTIw
 NTI1OSwxNDA3NjgwNjExLC04MDIzOTgzNzEsMTIyNDc4OTM2MS
 wtMjA1MjU4MjY5OSwyOTg4MTQ5OTgsLTExODAwOTkwNTIsMjA3
