@@ -16,13 +16,33 @@
  */
 
 #include "dhry.h"
+#include <unistd.h>
 #include "libs/util/delay.h"
 #include "libs/sys/serial/serial.h"
 #include "libs/sys/gpio/gpio.h"
 #include "libs/sys/timer/timer.h"
-#include "libs/util/syscalls.h"
+//#include "libs/util/syscalls.h"
 
-
+/**
+ * The backend for stdio functions such as 
+ * puts, printf etc
+ * @param fd:   file descriptor
+ * @param ptr:  pointer to data
+ * @param len:  number of bytes
+ * @return:     number of bytes sent, -1 for failiure
+ */
+ssize_t _write(int fd, const void* ptr, size_t len) {
+  //volatile char *uart = (volatile char *)0x1000000;
+  if (fd == STDOUT_FILENO) {
+    for (size_t i = 0; i < len; ++i) {
+      //*uart = ((const char*)ptr)[i];
+      serial_putc(((const char*)ptr)[i]);
+      
+    }
+    return len;
+  }
+  return -1;
+}
 
 #ifndef DHRY_ITERS
 #define DHRY_ITERS 10000

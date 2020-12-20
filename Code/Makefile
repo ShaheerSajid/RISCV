@@ -2,20 +2,20 @@ CC = /opt/riscv64/bin/riscv64-unknown-elf-gcc
 ELFSIZE = /opt/riscv64/bin/riscv64-unknown-elf-size
 OBJCOPY = /opt/riscv64/bin/riscv64-unknown-elf-objcopy
 
-CFLAGS = -O3 -mabi=ilp32 -march=rv32im -mno-div -finline-functions -static -DTIME -DNOENUM -Wno-implicit -fno-common -falign-functions=4
-LDFLAGS = -Tlink.ld --specs=nano.specs -nostartfiles
+CFLAGS = -I./ -O2 -mabi=ilp32 -march=rv32im -mno-div
+LDFLAGS = -Tlink.ld --specs=nano.specs -nostartfiles -fno-builtin-printf
 
-SRCS = dhry_1.c dhry_2.c strcmp.S
+SRCS =  main.c
 
 
 .PHONY: all
 all: mem_init_generate
 
-dhry.elf: $(SRCS)
+main.elf: $(SRCS)
 	$(CC) -o $@ $^ $(CFLAGS) $(LDFLAGS)
 	$(ELFSIZE) $@
 
-mem_init/sys_onchip_memory2_0.hex: dhry.elf
+mem_init/sys_onchip_memory2_0.hex: main.elf
 	$(OBJCOPY) -O binary --gap-fill 0 $< mem_init/sys_onchip_memory2_0.bin
 	mem_init/bin2hex_2 mem_init/sys_onchip_memory2_0.bin mem_init/sys_onchip_memory2_0.hex
 
