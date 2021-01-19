@@ -19,7 +19,7 @@ Interrupts are not supported at the moment.
 
 ### Logic Utilization (Core only)
 
-![enter image description here](https://raw.githubusercontent.com/ShaheerSajid/RISCV/master/images/logic.png?token=AGHUJAOSO2JOU3EZCHKVKADAA3Y3E)
+![enter image description here](https://github.com/ShaheerSajid/RISCV/blob/master/images/RISCV.jpg)
 
 ## Benchmarks and Tests
 
