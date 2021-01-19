@@ -4,7 +4,7 @@ This is a soft implementation of a processor on the opensource RISC-V ISA. The p
 
 Initially a proof of concept was developed on logisim. It was at first a single cycle implementation which was later pipelined. Later on it was moved to verilog.
 
-![enter image description here](https://raw.githubusercontent.com/ShaheerSajid/RISCV/master/images/RISCV.jpg?token=AGHUJALHKK2GXJUUVAXFQUDAA3YYE)
+![enter image description here](https://raw.githubusercontent.com/ShaheerSajid/RISCV/master/images/logic.png)
 
 
 Instructions are fetched at a latency of 1 clock cycle. There is a separate ALU for branch and jump address calculation located in the decode stage. Since the branch addresses are calculated in the decode stage, only a single cycle bubble is inserted when the branch is taken. 
@@ -43,7 +43,7 @@ Correct operation validated. See README.md for run and reporting rules.
 ```
 **Coremark/mhz = 2.58**
 
-![enter image description here](https://raw.githubusercontent.com/ShaheerSajid/RISCV/master/images/coremark.png?token=AGHUJAIEDDRVUZI33XBROR3AA3Y42)
+![enter image description here](https://raw.githubusercontent.com/ShaheerSajid/RISCV/master/images/coremark.png)
 
 *rv32im is without hard division
 
@@ -81,12 +81,12 @@ Cycles: 2282586
 ```
 
 ### Dhrystone
-![enter image description here](https://raw.githubusercontent.com/ShaheerSajid/RISCV/master/images/dhry_out.png?token=AGHUJAKXLSV4Q6LJBHUCPRTAA3ZCU)
+![enter image description here](https://raw.githubusercontent.com/ShaheerSajid/RISCV/master/images/dhry_out.png)
 ```
 	 DMIPS/Mhz = ( (1/execution time) x runs) / (1757 x Frequency in Mhz) 
 ```
 
-![enter image description here](https://raw.githubusercontent.com/ShaheerSajid/RISCV/master/images/dhry.png?token=AGHUJAKVAQPCBFPNFJ7F73DAA3ZD2)
+![enter image description here](https://raw.githubusercontent.com/ShaheerSajid/RISCV/master/images/dhry.png)
 
 
 I used the compiler settings of SiFive for dhrystone test and I got a higher score. I must say that dhrystone test is more of a compiler benchmark.
