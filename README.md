@@ -4,7 +4,7 @@ This is a soft implementation of a processor on the opensource RISC-V ISA. The p
 
 Initially a proof of concept was developed on logisim. It was at first a single cycle implementation which was later pipelined. Later on it was moved to verilog.
 
-![enter image description here](https://raw.githubusercontent.com/ShaheerSajid/RISCV/master/images/RISCV.jpg)
+![enter image description here](https://github.com/ShaheerSajid/RISCV/blob/master/images/RISCV.jpg)
 
 
 Instructions are fetched at a latency of 1 clock cycle. There is a separate ALU for branch and jump address calculation located in the decode stage. Since the branch addresses are calculated in the decode stage, only a single cycle bubble is inserted when the branch is taken. 
@@ -19,7 +19,7 @@ Interrupts are not supported at the moment.
 
 ### Logic Utilization (Core only)
 
-![enter image description here](https://raw.githubusercontent.com/ShaheerSajid/RISCV/master/images/logic.png)
+![enter image description here](https://github.com/ShaheerSajid/RISCV/blob/master/images/logic.png)
 
 ## Benchmarks and Tests
 
@@ -43,7 +43,7 @@ Correct operation validated. See README.md for run and reporting rules.
 ```
 **Coremark/mhz = 2.58**
 
-![enter image description here](https://raw.githubusercontent.com/ShaheerSajid/RISCV/master/images/coremark.png)
+![enter image description here](https://github.com/ShaheerSajid/RISCV/blob/master/images/coremark.png)
 
 *rv32im is without hard division
 
@@ -81,12 +81,12 @@ Cycles: 2282586
 ```
 
 ### Dhrystone
-![enter image description here](https://raw.githubusercontent.com/ShaheerSajid/RISCV/master/images/dhry_out.png)
+![enter image description here](https://github.com/ShaheerSajid/RISCV/blob/master/images/dhry_out.png)
 ```
 	 DMIPS/Mhz = ( (1/execution time) x runs) / (1757 x Frequency in Mhz) 
 ```
 
-![enter image description here](https://raw.githubusercontent.com/ShaheerSajid/RISCV/master/images/dhry.png)
+![enter image description here](https://github.com/ShaheerSajid/RISCV/blob/master/images/dhry.png)
 
 
 I used the compiler settings of SiFive for dhrystone test and I got a higher score. I must say that dhrystone test is more of a compiler benchmark.
@@ -178,11 +178,11 @@ DMIPS/MHz = 1.448
  - [ ] Branch Prediction
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDAwODAyODk0LDE0NTIyOTA3MDIsLTE5Mz
-gwMTkyMDksLTk3MjExMTI0NSwtMTAyMzY1ODgyMSwtNDA1MjA1
-MjU5LDE0MDc2ODA2MTEsLTgwMjM5ODM3MSwxMjI0Nzg5MzYxLC
-0yMDUyNTgyNjk5LDI5ODgxNDk5OCwtMTE4MDA5OTA1MiwyMDc2
-NjQzMjkxLC04NzYxNDQ4MTAsNzYxNDEyMzAyLC05MjI2ODIxMC
-wtMTcxMzIyMzY1OCwtMTI3OTkzMjA2MCwxNjk3OTg1MTIwLDg5
-MDc4Mzc4M119
+eyJoaXN0b3J5IjpbLTEwNDUyMzE5NjgsNDAwODAyODk0LDE0NT
+IyOTA3MDIsLTE5MzgwMTkyMDksLTk3MjExMTI0NSwtMTAyMzY1
+ODgyMSwtNDA1MjA1MjU5LDE0MDc2ODA2MTEsLTgwMjM5ODM3MS
+wxMjI0Nzg5MzYxLC0yMDUyNTgyNjk5LDI5ODgxNDk5OCwtMTE4
+MDA5OTA1MiwyMDc2NjQzMjkxLC04NzYxNDQ4MTAsNzYxNDEyMz
+AyLC05MjI2ODIxMCwtMTcxMzIyMzY1OCwtMTI3OTkzMjA2MCwx
+Njk3OTg1MTIwXX0=
 -->
