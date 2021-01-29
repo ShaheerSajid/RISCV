@@ -383,7 +383,7 @@ int printf(const char *format, ...)
         return print( 0, format, args );
 
 }
-/*int sprintf(char *out, const char *format, ...)
+int sprintf(char *out, const char *format, ...)
 
 {
 
@@ -395,6 +395,6 @@ int printf(const char *format, ...)
 
         return print( &out, format, args );
 
-}*/
+}
 
 #endif

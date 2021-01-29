@@ -1,62 +1,27 @@
-module forwarding_br(float_read, fw_ie, fw_imem, fw_wb, rs1id,rs2id, rdex, rdmem, rdwb, wbex,wbmem, wbwb,memr, fa, fb);
+module forwarding_br
+#(parameter FLOAT=0)
+(float_read, fw_wb, rs1id,rs2id, rdwb, wbwb, fa, fb);
 
 
 input [1:0] float_read;
-input fw_ie,fw_imem,fw_wb;
-
-input [4:0] rs1id,rs2id, rdex,rdmem,rdwb;
-input wbex, wbmem, wbwb,memr;
-output reg [2:0] fa,fb;
-
+input fw_wb;
+input [4:0] rs1id,rs2id,rdwb;
+input wbwb;
+output reg fa,fb;
 
 always@(*)
 begin
+	if(FLOAT)
+	begin
+	fa = wbwb && rdwb != 0 && rdwb == rs1id  && (float_read[1]==fw_wb);
+	fb = wbwb && rdwb != 0 && rdwb == rs2id  && (float_read[0]==fw_wb);
+	end
+	else
+	begin
+	fa = wbwb && rdwb != 0 && rdwb == rs1id;
+	fb = wbwb && rdwb != 0 && rdwb == rs2id;
+	end
 
-	/*
-	fa = 3'b000;
-	fb = 3'b000;
-	
-	if(wbex && rdex != 0 && rdex == rs1id && (float_read[1]==fw_ie))
-		fa = 3'b001;
-		
-	if(wbex && rdex != 0 && rdex == rs2id && (float_read[0]==fw_ie))
-		fb = 3'b001;
-		
-			
-	if(!memr && wbmem && rdmem != 0 && rdmem == rs1id && (float_read[1]==fw_imem) &&  !(wbex && rdex != 0  && rdex == rs1id && (float_read[1]==fw_ie)))
-		fa  =3'b010;
-		
-	if(!memr && wbmem && rdmem != 0 && rdmem == rs2id && (float_read[0]==fw_imem) &&  !(wbex && rdex != 0  && rdex == rs2id && (float_read[0]==fw_ie)))
-		fb  =3'b010;	
-		
-	
-	if(memr && wbmem && rdmem != 0 && rdmem == rs1id  && (float_read[1]==fw_imem) &&  !(wbex && rdex != 0  && rdex == rs1id && (float_read[1]==fw_ie)))
-		fa  =3'b011;
-		
-	if(memr && wbmem && rdmem != 0 && rdmem == rs2id  && (float_read[0]==fw_imem) &&  !(wbex && rdex != 0  && rdex == rs2id && (float_read[0]==fw_ie)))
-		fb  =3'b011;
-	
-	
-	if(wbwb && rdwb != 0 && rdwb == rs1id  && (float_read[1]==fw_wb) &&  !(wbmem && rdmem != 0  && rdmem == rs1id && (float_read[1]==fw_imem)) &&  !(wbex && rdex != 0  && rdex == rs1id && (float_read[1]==fw_ie)))
-		fa  =3'b100;
-		
-	if(wbwb && rdwb != 0 && rdwb == rs2id  && (float_read[0]==fw_wb) &&  !(wbmem && rdmem != 0  && rdmem == rs2id && (float_read[0]==fw_imem)) &&  !(wbex && rdex != 0  && rdex == rs2id && (float_read[0]==fw_ie)))
-		fb  =3'b100;
-		*/
-
-	//fa[0] = wbex && rdex != 0 && rdex == rs1id && (float_read[1]==fw_ie);
-	//fb[0] = wbex && rdex != 0 && rdex == rs2id && (float_read[0]==fw_ie);
-	//fa[1] = wbwb && rdwb != 0 && rdwb == rs1id  && (float_read[1]==fw_wb) /*&&  !(wbmem && rdmem != 0  && rdmem == rs1id && (float_read[1]==fw_imem))*/ &&  !(wbex && rdex != 0  && rdex == rs1id && (float_read[1]==fw_ie));
-	//fb[1] = wbwb && rdwb != 0 && rdwb == rs2id  && (float_read[0]==fw_wb) /*&&  !(wbmem && rdmem != 0  && rdmem == rs2id && (float_read[0]==fw_imem))*/ &&  !(wbex && rdex != 0  && rdex == rs2id && (float_read[0]==fw_ie));
-	//fa[2] = 0;
-	//fb[2] = 0;
-	fa[0] = wbwb && rdwb != 0 && rdwb == rs1id  && (float_read[1]==fw_wb);
-	fb[0] = wbwb && rdwb != 0 && rdwb == rs2id  && (float_read[0]==fw_wb);
-	fa[1] = 0;
-	fb[1] = 0;
-	fa[2] = 0;
-	fb[2] = 0;
-	
 end
 
 endmodule

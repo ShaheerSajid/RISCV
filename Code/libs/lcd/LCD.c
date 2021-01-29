@@ -4,6 +4,7 @@
 
 void lcd_data_write(unsigned char data)
 {
+	volatile int *gpio_addr = (int*)0x11004;
 	out = 0;
 	out |= data;
 	out |= (1<<rs);
@@ -18,6 +19,7 @@ void lcd_data_write(unsigned char data)
 }
 void lcd_cmd_write(unsigned char data)
 {
+	volatile int *gpio_addr = (int*)0x11004;
 	out = 0;
 	out |= data;
 	out |= (1<<en);
@@ -45,7 +47,7 @@ void lcd(int Rs, int En, int d0, int d1, int d2, int d3, int d4, int d5, int d6,
 	D7 = d7;
 }
 
-void print(char *data)
+void lcd_print(char *data)
 {
 	int x = 0;
 	while (data[x] != 0)
@@ -56,7 +58,7 @@ void print(char *data)
 }
 
 
-void init()
+void lcd_init()
 {
 	out = 0;
 	delay_ms(2);	
@@ -68,7 +70,7 @@ void init()
 	//delay_ms(1000);
 	lcd_cmd_write(0x06);
 }
-void setCursor(unsigned char x, unsigned char y)
+void lcd_setCursor(unsigned char x, unsigned char y)
 {
 	unsigned char data = 0;
 	if(y)
@@ -81,7 +83,7 @@ void setCursor(unsigned char x, unsigned char y)
 	delay_us(100);
 	//delay_ms(1000);
 }
-void clear()
+void lcd_clear()
 {
 	lcd_cmd_write(0x01); 
 	lcd_cmd_write(0x02);

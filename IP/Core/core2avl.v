@@ -53,14 +53,23 @@ module core2avl
 	always@(*)
 	begin
 		if(!mode[0] & !mode[1])
-			be = 1<<byt;
+			case(byt)
+			0:be = 4'b0001;
+			1:be = 4'b0010;
+			2:be = 4'b0100;
+			3:be = 4'b1000;
+			endcase
 		else if(mode[0] & !mode[1])
-			be = 2'b11 << byt;
+			case(byt)
+			0:be = 4'b0011;
+			1:be = 4'b0110;
+			2:be = 4'b1100;
+			3:be = 4'b0000;
+			endcase
 		else if(mode[1] & !mode[0])
 			be = 4'b1111;
 		else
-			be = 0;
-			
+			be = 4'b0000;		
 	end
 	
 	always@(*)

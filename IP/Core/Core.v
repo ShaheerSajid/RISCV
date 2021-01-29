@@ -47,7 +47,7 @@ wire [31:0] rd;
 wire [31:0]rs1, rs1_float;//
 wire [31:0]rs2, rs2_float;//
 wire [31:0]rs1_br,rs2_br, fa_out,fb_out;
-wire [2:0] fa_br,fb_br;
+wire fa_br,fb_br;
 wire fa_mem,fb_mem;
 wire [31:0]A,B,imm,A_out;
 wire [2:0]immsel;
@@ -85,9 +85,10 @@ wire [31:0] rs1_int, rs2_int;
 wire clk1;
 wire stall_core;
 wire reset_ie;
+wire br_true;
 wire br_stall;
 
-
+//localparam SIM = 0;
 
 reg enable;
 always@(negedge clk)
@@ -106,36 +107,34 @@ mux2to1 mux2to1_inst
 	.mux_out(pc_in) 	// output  mux_out_sig
 );
 Program_Counter pc(
-	.stall(pc_stall),
+	.stall(br_stall),
 	.pc_in(pc_in) ,	// input [31:0] pc_in_sig
 	.pc_reset(reset) ,	// input  pc_reset_sig
 	.clk(clk1) ,	// input  clk_sig
 	.pc_out(pc_out) 	// output [31:0] pc_out_sig
 );
+
 register_stall #(.width(32)) reg_pc_out_sync
 (
-	.stall(id_stall),
+	.stall(br_stall),
 	.in((pc_sel)?pcAlu: pc_out) ,	// input [width-1:0] in_sig
 	.out(pc_out_sync) ,	// output [width-1:0] out_sig
 	.clk(clk1) ,	// input  clk_sig
 	.reset(reset) 	// input  reset_sig
 );
 //Program Counter End
-assign inst_addr = (pc_sel)?pcAlu>>2 : pc_out >> 2;
+assign inst_addr = (pc_sel)?pcAlu >>2: pc_out >>2;
 assign instruction = inst_data;
 
 
-
-
-
 //####################IF/ID########################
-assign reset_id = (~id_stall & flushid) | reset;
-assign inst_stall = id_stall | stall_core;
+assign reset_id = (~br_stall & flushid) | reset;
+assign inst_stall = br_stall | stall_core;
 
 
 register_stall #(.width(32)) regID_im
 (
-	.stall(id_stall),
+	.stall(br_stall),
 	.in(instruction) ,	// input [width-1:0] in_sig
 	.out(instruction_pipe_id) ,	// output [width-1:0] out_sig
 	.clk(clk1) ,	// input  clk_sig
@@ -143,7 +142,7 @@ register_stall #(.width(32)) regID_im
 );
 register_stall #(.width(32)) regID_pc
 (
-	.stall(id_stall),
+	.stall(br_stall),
 	.in(pc_out_sync) ,	// input [width-1:0] in_sig
 	.out(pc_out_pipe_id) ,	// output [width-1:0] out_sig
 	.clk(clk1) ,	// input  clk_sig
@@ -152,8 +151,8 @@ register_stall #(.width(32)) regID_pc
 //#################################################
 
 //Reg File Start
-assign rs1 = float_read[1]? rs1_float : rs1_int;
-assign rs2 = float_read[0]? rs2_float : rs2_int;
+assign rs1 = (F_Extension)? (float_read[1]? rs1_float : rs1_int) : rs1_int;
+assign rs2 = (F_Extension)? (float_read[0]? rs2_float : rs2_int) : rs2_int;
 REG_FILE regfile
 (
 	.clk(clk1) ,	// input  clk_sig
@@ -166,7 +165,6 @@ REG_FILE regfile
 	.rdAddrB(instruction_pipe_id[24:20]) ,	// input [4:0] rdAddrB_sig
 	.rdDataB(rs2_int) 	// output [31:0] rdDataB_sig
 );
-
 generate
 	if(F_Extension)
 		REG_FILE regfile_float
@@ -197,8 +195,10 @@ IMM_gen IMM_gen_inst
 
 
 //######################ID/IE#####################
-assign reset_ie = c_sel | reset;
+assign reset_ie = br_stall | reset;
 
+generate 
+if(F_Extension)
 register #(.width(4)) regIE_fpu
 (
 	.in({fpu_use,float_write,float_read}) ,	// input [width-1:0] in_sig
@@ -206,6 +206,7 @@ register #(.width(4)) regIE_fpu
 	.clk(clk1) ,	// input  clk_sig
 	.reset(reset_ie) 	// input  reset_sig
 );
+endgenerate
 register #(.width(3)) regIE_wb
 (
 	.in({wbSel,RegWEn}) ,	// input [width-1:0] in_sig
@@ -292,22 +293,15 @@ register #(.width(3)) regIE_mode
 forwarding_br forwarding_br_inst
 (
 	.float_read(float_read),
-	.fw_ie(fpu_ie[2]),
-	.fw_imem(fpu_imem),
 	.fw_wb(fpu_iwb),
 	.rs1id(instruction_pipe_id[19:15]) ,	// input [4:0] rs1id_sig
 	.rs2id(instruction_pipe_id[24:20]) ,	// input [4:0] rs2id_sig
-	.rdex(rdadd_pipe_ie) ,	// input [4:0] rdex_sig
-	.rdmem(rdadd_pipe_imem) ,	// input [4:0] rdmem_sig
 	.rdwb(rdadd_pipe_iwb) ,	// input [4:0] rdwb_sig
-	.wbex(wbsel_pipe_ie[0]) ,	// input  wbex_sig
-	.wbmem(wbsel_pipe_imem[0]) ,	// input  wbmem_sig
 	.wbwb(wbsel_pipe_iwb[0]) ,	// input  wbwb_sig
-	.memr(memWrite_pipe_imem[1]),
 	.fa(fa_br) ,	// output [1:0] fa_sig
 	.fb(fb_br) 	// output [1:0] fb_sig
 );
-
+defparam forwarding_br_inst.FLOAT = F_Extension;
 
 mux2to1 mux2to1_instrs1
 (
@@ -332,23 +326,21 @@ forward_mem forward_mem_inst
 	.rs2id(rs2add_pipe_ie) ,	// input [4:0] rs2id_sig
 	.rdmem(rdadd_pipe_imem) ,	// input [4:0] rdmem_sig
 	.wbmem(wbsel_pipe_imem[0]) ,	// input  wbmem_sig
-	.memr(memWrite_pipe_imem[1]) ,	// input  memr_sig
-	.memw_ie(memWrite_pipe_ie[0]) ,	// input  memw_id_sig
 	.fa(fa_mem) ,	// output  fa_sig
 	.fb(fb_mem) 	// output  fb_sig
 );
-
+defparam forward_mem_inst.FLOAT = F_Extension;
 mux2to1 mux2to1_inst6
 (
 	.din_0(rs1_pipe_ie) ,	// input [31:0] din_0_sig
-	.din_1(rd/*dmout*/) ,	// input [31:0] din_1_sig
+	.din_1(rd) ,	// input [31:0] din_1_sig
 	.sel(fa_mem) ,	// input  sel_sig
 	.mux_out(fa_out) 	// output  mux_out_sig
 );
 mux2to1 mux2to1_inst7
 (
 	.din_0(rs2_pipe_ie) ,	// input [31:0] din_0_sig
-	.din_1(rd/*dmout*/) ,	// input [31:0] din_1_sig
+	.din_1(rd) ,	// input [31:0] din_1_sig
 	.sel(fb_mem) ,	// input  sel_sig
 	.mux_out(fb_out) 	// output  mux_out_sig
 );
@@ -356,19 +348,16 @@ mux2to1 mux2to1_inst7
 //2. Stall Condition
 stall_line stall_line_inst
 (
-	.inst(br_stall),
+	.inst(br_true),
 	.float_read(float_read),
 	.fw_ie(fpu_ie[2]),
-	.memw_id(memWrite[0]),
-	.memr_ie(wbsel_pipe_ie[0]/*memWrite_pipe_ie[1]*/) ,	// input  mem_ie_sig
+	.wb_ie(wbsel_pipe_ie[0]) ,	// input  mem_ie_sig
 	.rd_ie(rdadd_pipe_ie) ,	// input [4:0] rd_ie_sig
 	.rs1_id(instruction_pipe_id[19:15]) ,	// input [4:0] rs1_id_sig
 	.rs2_id(instruction_pipe_id[24:20]) ,	// input [4:0] rs2_id_sig
-	.c_sel(c_sel) ,	// output  c_sel_sig
-	.id_stall(id_stall) ,	// output  id_stall_sig
-	.pc_stall(pc_stall) 	// output  pc_stall_sig
+	.br_stall(br_stall) 	// output  pc_stall_sig
 );
-
+defparam stall_line_inst.FLOAT = F_Extension;
 //###################################################
 
 
@@ -393,7 +382,7 @@ pcALU pcALU_inst
 mux2to1 mux2to1_inst8
 (
 	.din_0(fa_out) ,	// input [31:0] din_0_sig
-	.din_1(pc_out_pipe_ie /*<< 2*/) ,	// input [31:0] din_1_sig
+	.din_1(pc_out_pipe_ie) ,	// input [31:0] din_1_sig
 	.sel(aluop_pipe_ie[6]) ,	// input  sel_sig
 	.mux_out(A) 	// output  mux_out_sig
 );
@@ -457,7 +446,7 @@ register #(.width(2)) regIMEM_m
 );
 register #(.width(32)) regIMEM_pc
 (
-	.in(pc_out_pipe_ie) ,	// input [width-1:0] in_sig
+	.in(pc_out_pipe_ie + 4) ,	// input [width-1:0] in_sig
 	.out(pc_out_pipe_imem) ,	// output [width-1:0] out_sig
 	.clk(clk1) ,	// input  clk_sig
 	.reset(reset) 	// input  reset_sig
@@ -469,6 +458,9 @@ register #(.width(3)) regIMEM_mode
 	.clk(clk1) ,	// input  clk_sig
 	.reset(reset) 	// input  reset_sig
 );
+
+generate 
+if(F_Extension)
 register #(.width(1)) regIMEM_fpu
 (
 	.in(fpu_ie[2]) ,	// input [width-1:0] in_sig
@@ -476,6 +468,9 @@ register #(.width(1)) regIMEM_fpu
 	.clk(clk1) ,	// input  clk_sig
 	.reset(reset) 	// input  reset_sig
 );
+else
+assign fpu_imem = 0;
+endgenerate
 
 
 
@@ -570,7 +565,7 @@ mux2to1 mux2to1_inst3
 mux2to1 mux2to1_inst4
 (
 	.din_0(adm) ,	// input [31:0] din_0_sig
-	.din_1(pc_out_pipe_iwb+4) ,	// input [31:0] din_1_sig
+	.din_1(pc_out_pipe_iwb) ,	// input [31:0] din_1_sig
 	.sel(wbsel_pipe_iwb[1]) ,	// input  sel_sig
 	.mux_out(rd) 	// output  mux_out_sig
 );
@@ -606,7 +601,7 @@ Control_Path Control
 	.float_read(float_read),
 	.float_write(float_write),
 	.fpu_use(fpu_use),
-	.br_true(br_stall)
+	.br_true(br_true)
 );
 //Control End
 
