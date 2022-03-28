@@ -164,18 +164,7 @@ DMIPS/MHz = 1.448
  - TIMER
 
 
-## ToDos
 
- - [ ] ISP
- - [ ] Interrupts
- - [ ] CSR 
- - [ ] Improve FMAX
-	 - [ ] Optimize combinational cloud 
-	 - [ ] Pipelined Div and Rem
-	 - [ ] Pipelined FPU
- - [ ] Support for external flash
- - [ ] Support for SDRAM
- - [ ] Branch Prediction
 
 <!--stackedit_data:
 eyJoaXN0b3J5IjpbLTE5Mjg1ODQyNCwtMTA0NTIzMTk2OCw0MD
